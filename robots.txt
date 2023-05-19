@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Jo-a-n.github.io/sitemap.xml
