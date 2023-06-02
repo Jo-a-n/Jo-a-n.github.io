@@ -19,8 +19,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hey, I'm Ioanna, a Web Designer with a focus on User Experience Design. 
+I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
+
+I graduated as an Architect from the Polytechnic School of Athens (NTUA). In my time at NTUA, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes to my practice as a designer of virtual environments.
+
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
