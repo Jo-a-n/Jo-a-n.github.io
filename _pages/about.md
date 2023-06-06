@@ -5,28 +5,82 @@ permalink: /
 subtitle: UI/UX designer, architect
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  # address: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
+#   # address: >
+#   #   <p>555 your office number</p>
+#   #   <p>123 your address street</p>
+#   #   <p>Your City, State 12345</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
+display_categories: [see my work]
 ---
 
 _Some things about me:_ 
 
 I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
 
-I graduated as an Architect from the National Polytechnic School of Athens (NTUA). In my time at NTUA, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes to my practice as a designer of virtual environments.
+I graduated as an Architect from the Polytechnic School of Athens (NTUA). In my time at NTUA, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes to my practice as a designer of virtual environments.
 
 Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 
+
+<!-- pages/projects.md -->
+<div class="projects">
+{%- if site.enable_project_categories and page.display_categories %}
+  <!-- Display categorized projects -->
+  {%- for category in page.display_categories %}
+  <h2 class="category">{{ category }}</h2>
+  {%- assign categorized_projects = site.projects | where: "category", category -%}
+  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+  <!-- Generate cards for each project -->
+  {% if page.horizontal -%}
+  <div class="container">
+    <div class="row row-cols-2">
+    {%- for project in sorted_projects -%}
+      {% include projects_horizontal.html %}
+    {%- endfor %}
+    </div>
+  </div>
+  {%- else -%}
+  <div class="grid">
+    {%- for project in sorted_projects -%}
+      {% include projects.html %}
+    {%- endfor %}
+  </div>
+  {%- endif -%}
+  {% endfor %}
+
+{%- else -%}
+<!-- Display projects without categories -->
+  {%- assign sorted_projects = site.projects | sort: "importance" -%}
+  <!-- Generate cards for each project -->
+  {% if page.horizontal -%}
+  <div class="container">
+    <div class="row row-cols-2">
+    {%- for project in sorted_projects -%}
+      {% include projects_horizontal.html %}
+    {%- endfor %}
+    </div>
+  </div>
+  {%- else -%}
+  <div class="grid">
+    {%- for project in sorted_projects -%}
+      {% include projects.html %}
+    {%- endfor %}
+  </div>
+  {%- endif -%}
+{%- endif -%}
+</div>
+
+[See All Projects](/projects/)
+
+
+
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
