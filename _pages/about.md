@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: UI/UX Designer, Designer
+subtitle: UI/UX designer, architect
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -22,12 +22,11 @@ social: true  # includes social icons at the bottom of the page
 
 _Some things about me:_ 
 
-I am collaborating with clients and design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives.
-
 I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
 
 I graduated as an Architect from the National Polytechnic School of Athens (NTUA). In my time at NTUA, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes to my practice as a designer of virtual environments.
 
+Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
