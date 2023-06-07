@@ -1,16 +1,18 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: see my work
+title: Walk to Plato's Academy
+description: Interactive Tour in Athens
+img: /assets/img/cover-dipylon.jpeg
+importance: 1
+category: selected projects
 ---
+
+    UI/UX Design, Creative Design, 2D Illustrations
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
+
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
@@ -62,6 +64,8 @@ You describe how you toiled, sweated, *bled* for your project, and then... you r
 </div>
 
 
+
+
 The code is simple.
 Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
 To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
@@ -79,3 +83,14 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+<div class="text-left">
+    <p style="color:#606060;">Credits:<br>
+    ________<br>
+    Project: Walk to Plato’s Academy – Interactive Tour Web App<br>
+    Scope of Work: UI/UX Design, Creative Design, 2D Illustrations<br>
+    Client: Dipylon Society<br>
+    3D Art / Development / Project Management: CGWORKS<br>
+    Project Manager: Zania Iliadi<br>    
+    Published: 2023</p> 
+</div>

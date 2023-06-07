@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: UI/UX designer, architect
+subtitle: UI/UX Designer | MEng in Architecture
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 # profile:
@@ -18,14 +18,14 @@ news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
-display_categories: [see my work]
+display_categories: [selected projects]
 ---
 
 _Some things about me:_ 
 
 I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
 
-I graduated as an Architect from the Polytechnic School of Athens (NTUA). In my time at NTUA, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes to my practice as a designer of virtual environments.
+I graduated as an Architect from the Polytechnic School of Athens (NTUA). Working as an architect, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes later on to my practice as a designer of virtual environments.
 
 Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 
 
@@ -77,8 +77,12 @@ Currently, I design as part of a web development team. By proposing designs that
 {%- endif -%}
 </div>
 
-[See All Projects](/projects/)
+<!-- button to projects -->
+<!-- [See All Projects](/projects/){: .btn .btn-secondary} -->
 
+<div class="text-left">
+  <a href="/projects" class="btn btn-secondary">See All Projects</a>
+</div> 
 
 
 

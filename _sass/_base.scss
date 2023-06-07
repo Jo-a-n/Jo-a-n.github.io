@@ -525,7 +525,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 285px;
+    width: 383px;
     margin-bottom: 10px;
   }
 
@@ -995,4 +995,13 @@ nav[data-toggle="toc"] {
       color: var(--global-danger-block-title);
     }
   }
+}
+
+/* button */
+.btn-secondary {
+  background-color: var(--global-theme-color) !important;
+  color: var(--global-hover-text-color);
+}
+.text-center {
+  text-align: center;
 }
