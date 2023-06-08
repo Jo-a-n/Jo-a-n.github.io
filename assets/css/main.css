@@ -7,11 +7,11 @@
  ******************************************************************************/
 :root {
   --global-bg-color: #ffffff;
-  --global-code-bg-color: rgba(181, 9, 172, 0.05);
-  --global-text-color: #000000;
+  --global-code-bg-color: rgba(28, 73, 117, 0.05);
+  --global-text-color: #242424;
   --global-text-color-light: #828282;
-  --global-theme-color: #B509AC;
-  --global-hover-color: #B509AC;
+  --global-theme-color: #1C4975;
+  --global-hover-color: #1C4975;
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
@@ -57,7 +57,7 @@ html[data-theme=dark] {
   --global-hover-text-color: #ffffff;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
-  --global-footer-link-color: #000000;
+  --global-footer-link-color: #242424;
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
@@ -233,7 +233,7 @@ blockquote {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 6rem;
 }
 
 .profile.float-left {
@@ -494,7 +494,7 @@ footer.sticky-bottom {
   color: var(--global-text-color);
 }
 .pagination .page-item .page-link:hover {
-  color: #000000;
+  color: #242424;
 }
 .pagination .page-item.active .page-link {
   color: #ffffff;
@@ -528,7 +528,7 @@ footer.sticky-bottom {
 }
 .projects .grid-sizer,
 .projects .grid-item {
-  width: 285px;
+  width: 383px;
   margin-bottom: 10px;
 }
 .projects h2.category {
@@ -638,7 +638,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .badges span {
   display: inline-block;
-  color: #000000;
+  color: #242424;
   height: 100%;
   padding-right: 0.5rem;
   vertical-align: middle;
@@ -911,6 +911,16 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 .post .post-content blockquote.block-danger h1, .post .post-content blockquote.block-danger h2, .post .post-content blockquote.block-danger h3, .post .post-content blockquote.block-danger h4, .post .post-content blockquote.block-danger h5, .post .post-content blockquote.block-danger h6 {
   color: var(--global-danger-block-title);
+}
+
+/* button */
+.btn-secondary {
+  background-color: var(--global-theme-color) !important;
+  color: var(--global-hover-text-color);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*******************************************************************************
