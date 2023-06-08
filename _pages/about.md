@@ -30,7 +30,7 @@ I graduated as an Architect from the Polytechnic School of Athens (NTUA). Workin
 Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 
 
 <!-- to do -->
-
+{% if false %}
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
@@ -85,6 +85,7 @@ Currently, I design as part of a web development team. By proposing designs that
 <div class="text-left">
   <a href="/projects" class="btn btn-secondary">See All Projects</a>
 </div> 
+{% endif %}
 
 {% if false %}
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
