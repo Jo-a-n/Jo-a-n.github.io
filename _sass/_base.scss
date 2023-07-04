@@ -533,8 +533,8 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: calc(33% - 4px);
-    margin-bottom: 10px;
+    width: calc(33% - 18px);
+    margin-bottom: 32px;
 
     /* Media query for screen sizes up to 768px */
     @media (max-width: 768px) {
