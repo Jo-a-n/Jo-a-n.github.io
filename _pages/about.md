@@ -17,13 +17,13 @@ subtitle: UI/UX Designer | MEng in Architecture
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 display_categories: [some projects]
 ---
 
-I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
+<p class="mt-4" style="color:#747373; font-weight:400;">I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.<br><br>
 
-I graduated as an Architect from the Polytechnic School of Athens (NTUA). Working as an architect, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes later on to my practice as a designer of virtual environments.Currently, I design as part of a web development team.
+I graduated as an Architect from the Polytechnic School of Athens (NTUA). Working as an architect, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes later on to my practice as a designer of virtual environments.Currently, I design as part of a web development team.</p>
 
 <!-- to do -->
 {% if true %}
@@ -75,12 +75,15 @@ I graduated as an Architect from the Polytechnic School of Athens (NTUA). Workin
 {%- endif -%}
 </div>
 
+<div class="text-right">
 <!-- button to projects -->
-[see all projects ->](/projects){: .btn-io .btn-io:hover }
+  <a href="/projects" class="btn-io">See all projects -></a>
+</div>
+<br>
 
 {% endif %}
 
-
+<!-- [see all projects ->](/projects){: .btn-io .btn-io:hover } -->
 
 {% if false %}
 ex: Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 

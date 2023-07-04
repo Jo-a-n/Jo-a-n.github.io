@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Past projects, case studies and other stuff I've done.
+# description: Past projects, case studies and other stuff I've done.
 nav: true
 nav_order: 2
 display_categories: [work, case studies]
