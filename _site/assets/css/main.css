@@ -198,15 +198,17 @@ blockquote {
 
 .card {
   background-color: var(--global-card-bg-color);
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.04);
 }
 .card img {
   width: 100%;
 }
 .card .card-title {
   color: var(--global-text-color);
-  font-weight: 300 !important;
-  font-size: 22px;
+  font-weight: 400 !important;
+  font-size: 20px;
   text-align: center;
+  margin-bottom: 0;
 }
 .card .card-item {
   width: auto;
@@ -531,8 +533,8 @@ footer.sticky-bottom {
 }
 .projects .grid-sizer,
 .projects .grid-item {
-  width: calc(33% - 18px);
-  margin-bottom: 32px;
+  width: calc(33% - 12px);
+  margin-bottom: 20px;
   /* Media query for screen sizes up to 768px */
 }
 @media (max-width: 768px) {

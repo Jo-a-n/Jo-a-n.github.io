@@ -2,7 +2,7 @@
 layout: page
 title: NGS 
 description: Health Web App
-img: /assets/img/cover-ngquiz.jpg
+img: /assets/img/ngquiz/cover-ngquiz.jpg
 importance: 4
 category: [work]
 ---
