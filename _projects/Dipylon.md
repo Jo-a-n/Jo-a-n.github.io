@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Walk to Plato's Academy
+title: Plato's Academy Tour
 description: Interactive Tour in Athens
 img: /assets/img/cover-dipylon.jpeg
 importance: 1
-category: selected projects
+category: [selected projects, work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -12,28 +12,68 @@ category: selected projects
     Scope of work: UI/UX Design, Creative Design, 2D Illustrations<br>
     Agency / 3D Art / Development / Project Management: CGWORKS<br>
     Published: 2023<br>
-    <a href="https://www.dipylon-walktoplatosacademy.org/">Visit Website ↗</a>
+    <a href="https://www.dipylon-walktoplatosacademy.org/">Visit Web App ↗</a>
     </p>
  </div>
 
+<div class="videoWrapper">
+  <!-- CSS tricks fluid-width-video -->
+  {% include figure.html path="assets/img/dipylon-videoload.jpg" title="landing page" class="img-fluid rounded z-depth-1" %}
+  <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/801967900?background=1" frameborder="0" allowfullscreen>
+  </iframe>
+</div>
+
+
 <br>
-Dipylon is a web application that offers users an immersive experience through a dynamic map interface. With real-time GPS tracking, interactive spot panoramas, and narrated audio guides, users can explore historical locations and uncover captivating stories along the way.
-<br>
-<br>
+<div class="row text-md-center justify-content-center">
+    <div class="col-lg-8">
+        <p>This project was developed and completed under my contract with the team of CGWORKS, in my time there as UX/UI designer. <br><br>
+        Dipylon is a web application that offers users an immersive tour through a dynamic map interface. With real-time GPS tracking, interactive spot panoramas, and narrated audio guides, users can explore historical locations and uncover captivating stories along the way.</p>
+    </div>    
+</div>
+
+<!-- This project was developed and completed under my contract with the team of CGWORKS, in my time there as UX/UI designer.
+
+Dipylon is a web application that offers users an immersive experience through a dynamic map interface. With real-time GPS tracking, interactive spot panoramas, and narrated audio guides, users can explore historical locations and uncover captivating stories along the way. -->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/dipylon1.png" title="6 app screens" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dipylon1.png" title="6 app screens" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
+<div class="caption">
+    For users who can't visit or want to revisit the route, a Web Tour version with 3D elements was created.
+</div>
 
-<br>
-"The project of the Dipylon Society entitled ''Walk to Plato’s Academy'' is an audiovisual web app (audio tour) offering an exciting philosophical, archaeological and educational walk in the modern area of Plato’s Academy. This original walk is designed for children and grownups and lasts about 2 hours, with all necessary stops.
+<div class="row text-md-center justify-content-center">
+    <div class="col-lg-8">
+        <p>"The project of the Dipylon Society entitled ''Walk to Plato’s Academy'' is an audiovisual web app (audio tour) offering an exciting philosophical, archaeological and educational walk in the modern area of Plato’s Academy. This original walk is designed for children and grownups and lasts about 2 hours, with all necessary stops. <br><br>
+        Following an alternative route in the city of Athens, the 21st-century traveler walks along the traces of the ancient road that connected the ancient Kerameikos with the Academy. Having as a starting point the main entrance to the ancient city, the Dipylon Gate, the modern traveler ends up in the area of the ancient Gymnasium and the Philosophical School of Plato, where they are guided around the visible antiquities within the renowned grove of the Academy."<br>
+        <i>source: <a href="https://dipylon.org/en/2022/07/27/walk-to-platos-academy/"> Dipylon Website</a></i></p>
+    </div>    
+</div>
 
-Following an alternative route in the city of Athens, the 21st-century traveler walks along the traces of the ancient road that connected the ancient Kerameikos with the Academy. Having as a starting point the main entrance to the ancient city, the Dipylon Gate, the modern traveler ends up in the area of the ancient Gymnasium and the Philosophical School of Plato, where they are guided around the visible antiquities within the renowned grove of the Academy."
-<br>
-<br>
+<!-- "The project of the Dipylon Society entitled ''Walk to Plato’s Academy'' is an audiovisual web app (audio tour) offering an exciting philosophical, archaeological and educational walk in the modern area of Plato’s Academy. This original walk is designed for children and grownups and lasts about 2 hours, with all necessary stops.
 
+Following an alternative route in the city of Athens, the 21st-century traveler walks along the traces of the ancient road that connected the ancient Kerameikos with the Academy. Having as a starting point the main entrance to the ancient city, the Dipylon Gate, the modern traveler ends up in the area of the ancient Gymnasium and the Philosophical School of Plato, where they are guided around the visible antiquities within the renowned grove of the Academy." -->
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dipylon2.png" title="3 mobile screens" class="img-fluid rounded" %}
+    </div>
+</div>
+<div class="caption">
+    Every POI includes a panorama of "Now" versus an artistic illustration of how it used to be in the past ("Then"), created by Pavlos Habidis.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dipylon3.png" title="3 mobile screens" class="img-fluid rounded" %}
+    </div>
+</div>
+<div class="caption">
+    The app contains transcripts of the audio narration with links to corresponding images and definitions of terms.
+</div>
 
 <!-- The code is simple.
 Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
@@ -55,15 +95,14 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %} -->
-<iframe class="img-fluid rounded z-depth-1" width="480" height="360" src="http://www.youtube.com/embed/WO82PoAczTc" frameborder="0"> </iframe>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/dipylon-end.jpeg" title="6 app screens" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/dipylon-end.jpeg" title="nice tiling, isn't it?" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-<div class="text-left">
+<div class="text-center">
     <p style="color: #737373; font-weight: 400;">Credits:<br>
     ________<br>
     Project: Walk to Plato’s Academy – Interactive Tour Web App<br>

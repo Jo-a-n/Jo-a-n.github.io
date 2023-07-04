@@ -9,15 +9,17 @@
         class="responsive-img-srcset"
         media="(max-width: {{ i }}px)" 
         srcset="{{ img_path | relative_url }}-{{ i }}.webp"
+        type="image/webp"
       />
     {% endfor -%}
     {% endif %}
 
     <!-- Fallback to the original file -->
+    <!-- Line 20 - Changed width to 100% (og value=auto) -->
     <img 
       src="{{ include.path | relative_url }}"
       {% if include.class %}class="{{ include.class }}"{% endif %}  
-      {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %} 
+      {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %}
       {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %} 
       {% if include.min-width %}min-width="{{ include.min-width }}"{% endif %} 
       {% if include.min-height %}min-height="{{ include.min-height }}"{% endif %} 

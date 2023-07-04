@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 display_categories: [selected projects]
 ---
 
-_Some things about me:_ 
+***Some things about me:*** 
 
 I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.
 
@@ -30,7 +30,7 @@ I graduated as an Architect from the Polytechnic School of Athens (NTUA). Workin
 Currently, I design as part of a web development team. By proposing designs that align with business goals and provide purposeful user experiences, I aim to bridge the gap between user needs and business objectives, delivering purposeful products. 
 
 <!-- to do -->
-{% if false %}
+{% if true %}
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
@@ -80,11 +80,9 @@ Currently, I design as part of a web development team. By proposing designs that
 </div>
 
 <!-- button to projects -->
-<!-- [See All Projects](/projects/){: .btn .btn-secondary} -->
+<br>
+[see all projects ->](/projects){: .btn-io .btn-io:hover }
 
-<div class="text-left">
-  <a href="/projects" class="btn btn-secondary">See All Projects</a>
-</div> 
 {% endif %}
 
 {% if false %}

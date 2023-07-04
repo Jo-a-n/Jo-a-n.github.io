@@ -327,6 +327,7 @@ imagemagick:
     - 480
     - 800
     - 1400
+    - 0
   input_directories:
     - assets/img/
   input_formats:
@@ -334,6 +335,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
+    - ".webp"
   output_formats:
     webp: "-resize 800x"
 

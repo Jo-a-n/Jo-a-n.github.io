@@ -139,6 +139,8 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 hr {
@@ -171,11 +173,6 @@ table.table a:hover:after :not(.nav-item.dropdown) {
   background-color: transparent;
 }
 
-figure,
-img {
-  max-width: 90vw;
-}
-
 blockquote {
   background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
@@ -190,10 +187,13 @@ blockquote {
 }
 
 .caption {
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  color: #646464;
 }
 
 .card {
@@ -204,6 +204,9 @@ blockquote {
 }
 .card .card-title {
   color: var(--global-text-color);
+  font-weight: 300 !important;
+  font-size: 22px;
+  text-align: center;
 }
 .card .card-item {
   width: auto;
@@ -370,7 +373,7 @@ blockquote {
   font-size: 4rem;
 }
 .social .contact-icons a i::before {
-  color: var(--global-text-color);
+  color: var(--global-divider-color);
   transition-property: all 0.2s ease-in-out;
 }
 .social .contact-icons a:hover i::before {
@@ -528,8 +531,15 @@ footer.sticky-bottom {
 }
 .projects .grid-sizer,
 .projects .grid-item {
-  width: 383px;
+  width: calc(33% - 4px);
   margin-bottom: 10px;
+  /* Media query for screen sizes up to 768px */
+}
+@media (max-width: 768px) {
+  .projects .grid-sizer,
+  .projects .grid-item {
+    width: 100%;
+  }
 }
 .projects h2.category {
   color: var(--global-divider-color);
@@ -914,13 +924,50 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 
 /* button */
-.btn-secondary {
-  background-color: var(--global-theme-color) !important;
+.btn-io {
+  background-color: var(--global-code-bg-color) !important;
+  color: var(--global-text-color);
+  border: none;
+  padding: 16px 40px;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.btn-io:hover {
+  background-color: var(--global-hover-color) !important;
   color: var(--global-hover-text-color);
 }
 
 .text-center {
   text-align: center;
+}
+
+/* Videowraper */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
+
+.quote {
+  max-width: 660px;
+}
+
+.rounded-xl {
+  border-radius: 14px;
 }
 
 /*******************************************************************************
