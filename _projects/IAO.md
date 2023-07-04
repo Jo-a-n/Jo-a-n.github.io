@@ -4,7 +4,7 @@ title: IAO
 description: Presentation Website
 img: /assets/img/cover-iao.jpg
 importance: 1
-category: [selected projects, work]
+category: [work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
