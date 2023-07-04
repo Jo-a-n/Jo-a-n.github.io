@@ -5,7 +5,7 @@ permalink: /projects/
 description: Past projects, case studies and other stuff I've done.
 nav: true
 nav_order: 2
-display_categories: [work, case studies, fun]
+display_categories: [work, case studies]
 horizontal: false
 ---
 

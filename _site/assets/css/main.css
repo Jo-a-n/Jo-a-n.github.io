@@ -205,8 +205,8 @@ blockquote {
 }
 .card .card-title {
   color: var(--global-text-color);
-  font-weight: 400 !important;
-  font-size: 20px;
+  font-weight: 300 !important;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 0;
 }
@@ -940,6 +940,7 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 
 .btn-io:hover {
+  transition: 0.8s;
   background-color: var(--global-hover-color) !important;
   color: var(--global-hover-text-color);
 }
