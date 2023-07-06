@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Hackathon - ThessDW
-description: Infrastructure app for citizens of Salonica
+title: Hackathon - ThessDW 2023
+description: Infrastructure App for citizens of Thessaloniki
 img: /assets/img/cover-eco-thes.jpg
 importance: 1
 category: [case studies]
 ---
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>
-    Hackathon by fromScratch Studio<br>
+    Organized by: <a href="https://www.fromscratch.io/#/">fromScratch Studio</a><br>
     Scope of work: UI/UX Anything<br>
     Team: <a href="https://www.linkedin.com/in/anthimi-papaemmanouil-46473a203/">Anthimi Papaemmanouil</a>, <a href="https://www.linkedin.com/in/dimitra-vasilakopoulou/">Dimitra Vasilakopoulou</a> <br>
-    Completed: 06/2023 in 48hrs<br>
+    Completed & Presented: 06/2023 in 48hrs<br>
     </p>
  </div>
 
@@ -33,14 +33,15 @@ category: [case studies]
     </div>
 </div>
 <div class="caption">
-    A user flow aiming to make using compost bins a weekly habit.
+    A user flow aiming to make using compost bins, a weekly habit.
 </div>
 
 <div class="row text-md-center justify-content-center">
     <div class="col-lg-8">
-        <p>Eco-thess is a <b>Case Study</b> for an eco app, designed as part of the Thessaloniki Design Week in the Hackathon organised by fromScratch Studio. For this mobile app every member wore multiple hats conducting simplified and condensed parts of the <b>UX research</b> and <b>design</b> of the project. The final result demostrated solutions for the main user pain points, highlighted in the process. <br><br> 
-        Εco-thess is an application for <b>locating and accessing</b> public compost bins, aiming to limit food waste, by making the collection and recycling of organic waste a <b>habit</b> for the citizens of Thessaloniki.<br><br>
-        It was a fun and beautiful project from resourceful team members!</p>
+        <p><b>"Εco-thess"</b> is a <b>mobile application</b> for <b>locating and accessing public compost bins</b>, aiming to limit food waste, by making the collection and recycling of organic waste a <b>habit</b> for the citizens of Thessaloniki.<br><br>
+        This is a Case Study designed as part of the Thessaloniki Design Week in a 48hrs Hackathon, organized by fromScratch Studio. <br><br>
+        For this app every team member wore multiple hats, conducting simplified and condensed parts of the <b>UX research</b>, <b>design</b> and <b>presentation</b> of the project. The final result showcased <b>solutions</b> for all the main identified <b>user pain points</b>, that were highlighted in the research phase. The final design was <b>presented</b> by the team at the conclusion of the Hackathon.<br><br> 
+        It was a fun and beautiful project with resourceful team members! <br>Scrolling, you can take a look at the slides presented in the event.</p>
     </div>    
 </div>
 
