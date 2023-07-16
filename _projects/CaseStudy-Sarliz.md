@@ -30,142 +30,144 @@ category: [case studies]
     </div>    
 </div>
 
-<div class="row">
-    <div class="col-sm mt-4">
-        {% include figure.html path="assets/img/sarliz/sarliz2.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+<div class="text-center">
+    <div class="row">
+        <div class="col-sm mt-4">
+            {% include figure.html path="assets/img/sarliz/sarliz2.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz3.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz3.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz4.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz4.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz5.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz5.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz6.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz6.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz7.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz7.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz8.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz8.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
- 
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz10.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz10.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz11.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz11.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz12.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz12.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz13.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz13.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz14.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz14.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz15.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz15.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz16.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz16.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz17.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz17.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz18.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz18.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz19.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz19.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz20.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz20.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz21.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz21.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz22.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz22.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz23.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz23.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz24.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz24.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        <a href="https://xd.adobe.com/view/38fad532-3ac1-45d1-8ec8-00a888b9cd8a-6da9/?fullscreen&hints=on">
-        {% include figure.html path="assets/img/sarliz/sarliz25.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
-        </a>
+    <div class="row">
+        <div class="col-sm">
+            <a href="https://xd.adobe.com/view/38fad532-3ac1-45d1-8ec8-00a888b9cd8a-6da9/?fullscreen&hints=on">
+            {% include figure.html path="assets/img/sarliz/sarliz25.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+            </a>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz26.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz26.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz27.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz27.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz28.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz28.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm">
-        {% include figure.html path="assets/img/sarliz/sarliz29.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/sarliz/sarliz29.png" title="ΣΑΡΛΙΖ cinema theatre website" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
 </div>
 

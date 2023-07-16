@@ -978,6 +978,34 @@ nav[data-toggle=toc] .nav-link.active:hover {
   border-radius: 14px;
 }
 
+/*Painpoint Card Style*/
+.painpoint-card {
+  border-radius: 24px;
+  padding: 24px;
+  background: #FCFAF9;
+  box-shadow: 0px 0px 10px 0px rgba(12, 7, 7, 0.08) inset, 0px -4px 1px 0px rgba(130, 0, 0, 0.25) inset;
+}
+.painpoint-card p {
+  color: #404040;
+}
+
+/*Solutions Card Style*/
+.solution-card {
+  border-radius: 24px;
+  padding: 24px 12px;
+  background: #F9F9FC;
+  box-shadow: 0px 0px 10px 0px rgba(14, 30, 39, 0.08) inset, 0px -4px 1px 0px rgba(0, 83, 130, 0.25) inset;
+}
+.solution-card p {
+  color: #404040;
+}
+
+.solution {
+  border-radius: 8px;
+  padding: 8px;
+  background: #F1F1F8;
+}
+
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/
