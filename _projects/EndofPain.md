@@ -35,15 +35,26 @@ category: [work]
   <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/797253744?background=1" frameborder="0" allowfullscreen>
   </iframe>
 </div>
+<div class="caption">
+    A user flow aiming to identify all parameters of the user's pain.
+</div>
 
-<br>
 <div class="row text-md-center justify-content-center">
     <div class="col-lg-8">
         <p>It's important to note that this web app serves as a promotional tool for UNI-PHARMA, providing basic information on dosage and offering downloadable drug leaflets for over-the-counter painkillers in their catalog. This tool can not and should not replace the visit to a doctor.</p>        
     </div>    
 </div>
 
-<div class="row justify-content-center">
+ <div class="row mt-3">
+    <div class="col-sm">
+        {% include figure.html path="assets/img/endofpain3.png" title="part of the IA process" class="img-fluid rounded-xl z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    After research, body areas were defined and symptoms were assigned to these areas accordingly.
+</div>
+
+<div class="row justify-content-center mt-4">
     <div class="col-6 col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/endofpain-mob4.jpeg" title="user selects sex & age" class="img-fluid rounded-xl border" %}
     </div>
