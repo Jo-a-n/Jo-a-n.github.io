@@ -18,7 +18,7 @@ news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
-display_categories: [some projects]
+display_categories: [my projects]
 ---
 
 <p class="mt-4" style="color:#747373; font-weight:400;">I believe in the uniqueness of human experience and its right to be respected and expressed. People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. A good tech application for me, is the one that bridges and eases those complexities.<br><br>

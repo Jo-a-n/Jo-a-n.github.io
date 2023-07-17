@@ -3,8 +3,8 @@ layout: page
 title: Hackathon - ThessDW 2023
 description: Infrastructure App for citizens of Thessaloniki
 img: /assets/img/cover-eco-thes.jpg
-importance: 1
-category: [case studies]
+importance: 2
+category: [case studies, my projects]
 ---
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>
@@ -71,7 +71,7 @@ category: [case studies]
             <p class="mb-0">Users <b>don’t trust</b> the compost waste management by Thessaloniki’s municipality.</p>
         </div>
     </div>
-      <div class="col-12 col-sm">
+      <div class="col-12 col-sm mb-2">
         <div class="align-items-start text-center painpoint-card h-100">          
             <p> <b>CONTRIBUTION</b> </p>
             <p> <img src = "/assets/icn/contribution-red.svg" /> </p>
@@ -112,7 +112,7 @@ category: [case studies]
             <p class="solution mb-0"><b>Report system</b> for broken, missing, full or misused bins.</p>
         </div>
     </div>
-      <div class="col-12 col-sm">
+      <div class="col-12 col-sm mb-2">
         <div class="align-items-start text-center solution-card h-100">          
             <p> <b>CONTRIBUTION</b> </p>
             <p> <img src = "/assets/icn/contribution-blue.svg" /> </p>

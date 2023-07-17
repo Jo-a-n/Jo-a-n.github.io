@@ -3,8 +3,8 @@ layout: page
 title: End of Pain
 description: Pain Management Web App
 img: /assets/img/cover-endofpain.jpg
-importance: 1
-category: [some projects, work]
+importance: 2
+category: [work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
