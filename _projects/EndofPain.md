@@ -32,7 +32,7 @@ category: [work]
 <div class="videoWrapper">
   <!-- CSS tricks fluid-width-video -->
   {% include figure.html path="assets/img/endofpain-videoload2.jpg" title="landing page" class="img-fluid rounded-xl z-depth-1" %}
-  <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/797253744?background=1" frameborder="0" allowfullscreen>
+  <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/797253744?background=1" rel="noopener noreferrer" frameborder="0" allowfullscreen>
   </iframe>
 </div>
 <div class="caption">
