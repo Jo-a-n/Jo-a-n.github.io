@@ -4,7 +4,7 @@ title: Hackathon - ThessDW 2023
 description: Infrastructure App for citizens of Thessaloniki
 img: /assets/img/cover-eco-thes.jpg
 importance: 2
-category: [case studies, my projects]
+category: [case studies]
 ---
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>

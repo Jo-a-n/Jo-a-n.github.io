@@ -4,7 +4,7 @@ title: Plato's Academy Tour
 description: Interactive Tour in Athens
 img: /assets/img/cover-dipylon.jpeg
 importance: 1
-category: [my projects, work]
+category: [some of my projects, work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

@@ -3,8 +3,8 @@ layout: page
 title: NGS 
 description: Health Web App
 img: /assets/img/cover-ngquiz.jpg
-importance: 3
-category: [work, my projects]
+importance: 2
+category: [work, some of my projects]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
