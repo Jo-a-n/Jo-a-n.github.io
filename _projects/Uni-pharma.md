@@ -1,9 +1,11 @@
 ---
 layout: page
 title: UNI-PHARMA
-description: Interactive Tour in Athens
-img: /assets/img/cover-dipylon.jpeg
-importance: 1
+category: WEB PAGE
+description: UI Design
+year: 2023
+img: /assets/img/cover-unipharma.jpg
+importance: 6
 category: [work]
 ---
 

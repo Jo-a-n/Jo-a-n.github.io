@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Zonalight E-shop
+title: ZONALIGHT
+category: E-SHOP
 description: E-Commerce Website
+year: 2021
 img: /assets/img/cover-zonalight.jpg
-importance: 4
+importance: 7
 category: [work]
 ---
 
@@ -18,6 +20,12 @@ category: [work]
 <div class="row">
     <div class="col-sm">
         {% include figure.html path="assets/img/zonalight/logo-zonalight.jpg" title="Zonalight logo" class="img-fluid rounded" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm my-1">
+        {% include figure.html path="assets/img/zonalight/device-zonalight.jpg" title="1.The Store Page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

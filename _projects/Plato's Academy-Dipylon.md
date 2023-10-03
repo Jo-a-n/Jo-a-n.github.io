@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Plato's Academy Tour
-description: Interactive Tour in Athens
-img: /assets/img/cover-dipylon.jpeg
-importance: 1
+title: WALK TO PLATO'S ACADEMY
+category: INTERACTIVE TOUR APP 
+description: UI/UX Design, Graphic Design, Art Direction
+year: 2023
+img: /assets/img/cover-dipylon.jpg
+importance: 2
 category: [some of my projects, work]
 ---
 
@@ -43,6 +45,12 @@ Dipylon is a web application that offers users an immersive experience through a
 </div>
 <div class="caption">
     For users who can't visit or want to revisit the route, a Web Tour version with 3D elements was created.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dipylon/device-dipylon.jpeg" title="6 app screens" class="img-fluid rounded z-depth-0" %}
+    </div>
 </div>
 
 <div class="row text-md-center justify-content-center">

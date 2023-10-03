@@ -1,10 +1,12 @@
 ---
 layout: page
 title: IAO
-description: Presentation Website
+category: LANDING PAGE
+description: UI Design
+year: 2021
 img: /assets/img/cover-iao.jpg
-importance: 3
-category: [work, some of my projects]
+importance: 5
+category: [work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -17,7 +19,7 @@ category: [work, some of my projects]
 
 <div class="row">
     <div class="col-sm">
-        {% include figure.html path="assets/img/cover-iao.jpg" title="tablet and mobile screens" class="img-fluid rounded z-depth-0" %}
+        {% include figure.html path="assets/img/iao/device-iao.jpg" title="tablet and mobile screens" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">

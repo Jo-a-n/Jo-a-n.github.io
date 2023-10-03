@@ -1,10 +1,12 @@
 ---
 layout: page
-title: End of Pain
-description: Pain Management Web App
+title: ENDOFPAIN
+category: INTERACTIVE TOOL
+description: UI/UX Design
+year: 2021
 img: /assets/img/cover-endofpain.jpg
-importance: 2
-category: [work]
+importance: 1
+category: [work, some of my projects]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -18,7 +20,7 @@ category: [work]
 
  <div class="row">
     <div class="col-sm">
-        {% include figure.html path="assets/img/endofpain/endofpain1.jpeg" title="landing page" class="img-fluid rounded-lg z-depth-1" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-start.jpg" title="landing and user flow screens" class="img-fluid rounded-lg z-depth-1" %}
     </div>
 </div>
 
