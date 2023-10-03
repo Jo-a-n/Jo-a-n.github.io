@@ -18,7 +18,7 @@ category: [some of my projects, work]
 
 <div class="videoWrapper">
   <!-- CSS tricks fluid-width-video -->
-  {% include figure.html path="assets/img/dipylon-videoload.jpg" title="landing page" class="img-fluid rounded z-depth-1" %}
+  {% include figure.html path="assets/img/dipylon/dipylon-videoload.jpg" title="landing page" class="img-fluid rounded z-depth-1" %}
   <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/801967900?background=1" rel="noopener noreferrer" frameborder="0" allowfullscreen>
   </iframe>
 </div>
@@ -38,7 +38,7 @@ Dipylon is a web application that offers users an immersive experience through a
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/dipylon1.png" title="6 app screens" class="img-fluid rounded z-depth-0" %}
+        {% include figure.html path="assets/img/dipylon/dipylon1.png" title="6 app screens" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 <div class="caption">
@@ -59,7 +59,7 @@ Following an alternative route in the city of Athens, the 21st-century traveler 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/dipylon2.png" title="3 mobile screens" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/dipylon/dipylon2.png" title="3 mobile screens" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
@@ -68,7 +68,7 @@ Following an alternative route in the city of Athens, the 21st-century traveler 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/dipylon3.png" title="3 mobile screens" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/dipylon/dipylon3.png" title="3 mobile screens" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
@@ -98,7 +98,7 @@ Here's the code for the last row of images above:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/dipylon-end.jpeg" title="nice tiling, isn't it?" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/dipylon/dipylon-end.jpeg" title="nice tiling, isn't it?" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

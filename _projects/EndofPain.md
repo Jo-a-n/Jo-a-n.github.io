@@ -18,7 +18,7 @@ category: [work]
 
  <div class="row">
     <div class="col-sm">
-        {% include figure.html path="assets/img/endofpain1.jpeg" title="landing page" class="img-fluid rounded-lg z-depth-1" %}
+        {% include figure.html path="assets/img/endofpain/endofpain1.jpeg" title="landing page" class="img-fluid rounded-lg z-depth-1" %}
     </div>
 </div>
 
@@ -31,7 +31,7 @@ category: [work]
 
 <div class="videoWrapper">
   <!-- CSS tricks fluid-width-video -->
-  {% include figure.html path="assets/img/endofpain-videoload2.jpg" title="landing page" class="img-fluid rounded-xl z-depth-1" %}
+  {% include figure.html path="assets/img/endofpain/endofpain-videoload2.jpg" title="landing page" class="img-fluid rounded-xl z-depth-1" %}
   <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/797253744?background=1" rel="noopener noreferrer" frameborder="0" allowfullscreen>
   </iframe>
 </div>
@@ -47,7 +47,7 @@ category: [work]
 
  <div class="row mt-3">
     <div class="col-sm">
-        {% include figure.html path="assets/img/endofpain3.png" title="part of the IA process" class="img-fluid rounded-xl z-depth-1" %}
+        {% include figure.html path="assets/img/endofpain/endofpain3.png" title="part of the IA process" class="img-fluid rounded-xl z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -56,19 +56,19 @@ category: [work]
 
 <div class="row justify-content-center mt-4">
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/endofpain-mob4.jpeg" title="user selects sex & age" class="img-fluid rounded-xl border" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-mob4.jpeg" title="user selects sex & age" class="img-fluid rounded-xl border" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/endofpain-mob2.jpeg" title="user selects general source of pain" class="img-fluid rounded-xl border" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-mob2.jpeg" title="user selects general source of pain" class="img-fluid rounded-xl border" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/endofpain-mob3.jpeg" title="user selects specific area" class="img-fluid rounded-xl border" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-mob3.jpeg" title="user selects specific area" class="img-fluid rounded-xl border" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/endofpain-mob5.jpeg" title="type of pain" class="img-fluid rounded-xl border" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-mob5.jpeg" title="type of pain" class="img-fluid rounded-xl border" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/endofpain-mob6.jpeg" title="drug suggestion" class="img-fluid rounded-xl border" %}
+        {% include figure.html path="assets/img/endofpain/endofpain-mob6.jpeg" title="drug suggestion" class="img-fluid rounded-xl border" %}
     </div>
 </div>
 <div class="caption">
@@ -77,7 +77,7 @@ category: [work]
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/endofpain-end.jpg" title="nice tiling, isn't it?" class="img-fluid rounded-lg z-depth-1" %}
+        {% include figure.html path="/assets/img/endofpain/endofpain-end.jpg" title="nice tiling, isn't it?" class="img-fluid rounded-lg z-depth-1" %}
     </div>
 </div>
 

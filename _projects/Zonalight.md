@@ -17,7 +17,7 @@ category: [work]
 
 <div class="row">
     <div class="col-sm">
-        {% include figure.html path="assets/img/logo-zonalight.jpg" title="Zonalight logo" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/zonalight/logo-zonalight.jpg" title="Zonalight logo" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -49,13 +49,13 @@ category: [work]
 <!-- Store Page & Product Page -->
 <div class="row">
     <div class="col-sm my-1">
-        {% include figure.html path="assets/img/zonalight2.png" title="1.The Store Page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/zonalight/zonalight2.png" title="1.The Store Page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm my-1">
-        {% include figure.html path="assets/img/zonalight3.png" title="2.The Product Page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/zonalight/zonalight3.png" title="2.The Product Page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -71,7 +71,7 @@ category: [work]
 <!-- Inspiration Page -->
 <div class="row">
     <div class="col-sm my-1">
-        {% include figure.html path="assets/img/zonalight4.png" title="Inspiration Page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/zonalight/zonalight4.png" title="Inspiration Page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -87,7 +87,7 @@ category: [work]
 <!-- Inspiration Page -->
 <div class="row">
     <div class="col-sm my-1">
-        {% include figure.html path="assets/img/zonalight5.png" title="Contact Page" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/zonalight/zonalight5.png" title="Contact Page" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

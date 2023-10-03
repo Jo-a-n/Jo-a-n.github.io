@@ -33,7 +33,7 @@ category: [work, some of my projects]
 
 <div class="row">
     <div class="col-sm my-4 my-md-0">
-        {% include figure.html path="assets/img/iao1.png" title="IAO scroll page" class="img-fluid rounded z-depth-0" %}
+        {% include figure.html path="assets/img/iao/iao1.png" title="IAO scroll page" class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
 
@@ -45,7 +45,7 @@ category: [work, some of my projects]
 
 <div class="row">
     <div class="col-sm my-4 my-md-0">
-        {% include figure.html path="assets/img/iao2.png" title="IAO on mobile" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/iao/iao2.png" title="IAO on mobile" class="img-fluid rounded" %}
     </div>
 </div>
 
