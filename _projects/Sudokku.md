@@ -4,9 +4,9 @@ title: SUDOKKU
 category: DEPLOYMENT Paas
 description: UI/UX Design
 year: TBA
-img: /assets/img/cover-placeholder.png
+img: /assets/img/cover-sudokku.jpg
 importance: 11
-category: []
+category: [work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -23,12 +23,12 @@ category: []
     </div>
 </div>
 <div class="caption">
-    A simple scroll website for networking purposes.
+    All I can show for now.
 </div>
 
 <div class="row mt-5 text-md-center justify-content-center">
     <div class="col-lg-8">
-        <p>If you are seeing this then the project <br> is currently residing in the mysterious realm of 'Top Secret Projects.' </p>
+        <p>If you are seeing this, then the project <br> is currently residing in the mysterious realm of 'Top Secret Projects.' </p>
         <p>They're so hush-hush that even finishing touches whisper. Stay tuned for the grand unveiling!</p>
         <p><em>(lol, this copy text was an AI suggestion for here, enjoy)</em></p>
     </div>    
