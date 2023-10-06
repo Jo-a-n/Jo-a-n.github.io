@@ -31,9 +31,9 @@ category: [work, some of my projects]
     </div>    
 </div>
 
-<div class="row mb-4">
+<div class="row mb-3">
     <div class="col-sm">
-        <div class="videowrapper">
+        <div class="videoWrapper embed-responsive">
             <video autoplay loop>
                 <source src="/assets/img/unipharma/home.mp4" type='video/mp4'>
             </video>
