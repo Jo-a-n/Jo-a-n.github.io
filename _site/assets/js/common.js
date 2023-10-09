@@ -27,7 +27,7 @@ $(document).ready(function () {
 $(document).ready(function() {
     $(document).scroll(function(){
         if ($(document).scrollTop() > 280) {
-            $(".bg-image-holder").css({ opacity: '0' })
+            $(".bg-image-holder").css({ opacity: '0.02' })
             $("body").css({ backgroundColor: '#E8C4C9' })
         } else {
             $(".bg-image-holder").css({ opacity: '.25' })
