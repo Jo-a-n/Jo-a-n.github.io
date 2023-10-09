@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AJUNA
-category: PRESENTATION WEBSITE 
+genre: PRESENTATION WEBSITE 
 description: UI Design, Graphic Design 
 year: 2021
 img: /assets/img/cover-ajuna.jpg

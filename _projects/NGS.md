@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NGS
-category: HEALTH
+sector: HEALTH
 description: UI/UX Design
 year: TBA
 img: /assets/img/cover-placeholder.png

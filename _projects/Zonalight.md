@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ZONALIGHT
-category: E-SHOP
+genre: E-SHOP
 description: E-Commerce Website
 year: 2021
 img: /assets/img/cover-zonalight.jpg

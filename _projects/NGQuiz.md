@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NGQUIZ 
-category: HEALTH APP
+genre: HEALTH APP
 description: UI/UX Design, Graphic Design
 year: 2021
 img: /assets/img/cover-ngquiz.jpg

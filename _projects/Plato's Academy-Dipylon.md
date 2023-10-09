@@ -1,7 +1,7 @@
 ---
 layout: page
 title: WALK TO PLATO'S ACADEMY
-category: INTERACTIVE TOUR APP 
+genre: INTERACTIVE TOUR APP 
 description: UI/UX Design, Graphic Design, Art Direction
 year: 2023
 img: /assets/img/cover-dipylon.jpg

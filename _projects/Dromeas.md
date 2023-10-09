@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DROMEAS ESHOP
-category: E-SHOP
+genre: E-SHOP
 description: UI/UX Design, Graphic Elements
 img: /assets/img/cover-dromeas.jpg
 year: 2022

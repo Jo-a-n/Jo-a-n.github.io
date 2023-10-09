@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Init Masonry
   var $grid = $('.grid').masonry({
-    gutter: 24,
+    gutter: 16,
     horizontalOrder: true,
     itemSelector: '.grid-item',
   });

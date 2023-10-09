@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UNI-PHARMA
-category: WEB PAGE
+genre: WEB PAGE
 description: UI Design, Product IA
 year: 2023
 img: /assets/img/cover-unipharma.jpg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IAO
-category: LANDING PAGE
+genre: LANDING PAGE
 description: UI Design
 year: 2021
 img: /assets/img/cover-iao.jpg

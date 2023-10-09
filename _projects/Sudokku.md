@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SUDOKKU
-category: DEPLOYMENT Paas
+sector: DEPLOYMENT Paas
 description: UI/UX Design
 year: TBA
 img: /assets/img/cover-sudokku.jpg

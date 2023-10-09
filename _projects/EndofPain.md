@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ENDOFPAIN
-category: INTERACTIVE TOOL
+genre: INTERACTIVE TOOL
 description: UI/UX Design
 year: 2021
 img: /assets/img/cover-endofpain.jpg

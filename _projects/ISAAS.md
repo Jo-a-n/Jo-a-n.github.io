@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ISAAS
-category: Infrastructure Management Saas
+genre: INFRASTRUCTURE MANAGEMENT SAAS
 description: UI/UX Design
 year: TBA
 img: /assets/img/cover-isaas.jpg
