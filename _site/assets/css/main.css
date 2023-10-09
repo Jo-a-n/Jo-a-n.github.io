@@ -143,6 +143,10 @@ strong {
   font-weight: 300;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -273,7 +277,6 @@ blockquote {
   }
 }
 .post-description {
-  margin-bottom: 2rem;
   font-size: 0.875rem;
 }
 .post-description a {
@@ -476,6 +479,11 @@ footer.sticky-bottom {
   display: inline-block;
   padding: 1rem 0.5rem;
   color: var(--global-text-color-light);
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 8rem;
 }
 
 .post-title mjx-container[jax=CHTML][display=true] {
@@ -1021,6 +1029,20 @@ nav[data-toggle=toc] .nav-link.active:hover {
   background: #F1F1F8;
 }
 
+/*Additional margin classes*/
+.mt-title {
+  margin-top: 160px;
+}
+
+/*Icons*/
+.down-arrow {
+  background: url("/assets/icn/ep_arrow-down.svg");
+  height: 32px;
+  width: 32px;
+  display: block;
+  margin: 0 auto;
+}
+
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/
@@ -1161,3 +1183,5 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
