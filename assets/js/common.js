@@ -26,9 +26,9 @@ $(document).ready(function () {
 // scroll hide background image
 $(document).ready(function() {
     $(document).scroll(function(){
-        if ($(document).scrollTop() > 280) {
+        if ($(document).scrollTop() > 240) {
             $(".bg-image-holder").css({ opacity: '0.02' })
-            $("body").css({ backgroundColor: '#E8C4C9' })
+            $("body").css({ backgroundColor: '#F5FFFE' })
         } else {
             $(".bg-image-holder").css({ opacity: '.25' })
             $("body").css({ backgroundColor: 'var(--global-bg-color)' })

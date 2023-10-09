@@ -94,7 +94,7 @@ blockquote {
 // Card
 
 .card {
-  background-color: var(--global-card-bg-color);
+  background-color: transparent;
   overflow: hidden;
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.04); 
   padding: 16px 24px;
@@ -122,19 +122,25 @@ blockquote {
   }
 
   &.hoverable:hover {
-    box-shadow: 0 4px 17px 0 rgba(0,0,0,0.10),0 6px 20px 0 rgba(0,0,0,0.12);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.22);
+    // box-shadow: 0 4px 17px 0 rgba(0,0,0,0.10),0 6px 20px 0 rgba(0,0,0,0.12);
+    box-shadow: 0px 3px 4px 0px rgba(255, 255, 255, 0.10), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset; 
+    backdrop-filter: blur(20px); 
   }
 }
 .card-body {
   padding: 0;
 }
 .card-text {
+  color: #475569 !important;
   margin-bottom: 8px;
   line-height: 1.2;
   font-size: 0.875rem;
 }
 .card-genre {
-  color: #747373;
+  color: #475569;
+  // color: #747373;
   font-weight: 400;
 }
 
@@ -199,10 +205,12 @@ blockquote {
 // Navbar customization
 
 .navbar {
-  box-shadow: none;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  margin: 34px 60px 2px;
+  border-radius: 500px;
 }
 
 .navbar .dropdown-menu {
@@ -563,7 +571,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: calc(33% - 6px);
+    width: calc(33% - 8px);
     margin-bottom: 16px;
 
     /* Media query for screen sizes up to 768px */
