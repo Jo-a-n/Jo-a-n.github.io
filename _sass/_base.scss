@@ -1131,8 +1131,10 @@ nav[data-toggle="toc"] {
 
 .logo-min {
   background: url('/assets/icn/logo-min.svg');
-  height: 88px;
-  width: 88px;
+  height: 89px;
+  width: 89px;
+  scale: .8;
+  padding: 2px;
   display: block;
   margin: 0 auto;
   margin-top: 10rem;

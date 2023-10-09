@@ -11,7 +11,7 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
+    <div class="bg-image-holder"></div>
     <!-- Header -->
     {%- include header.html %}
 
@@ -45,6 +45,8 @@
         {{ content }}
       {% endif %}
     </div>
+
+    <span class='logo-min'></span>
 
     <!-- Footer -->
     {%- include footer.html %}

@@ -23,3 +23,15 @@ $(document).ready(function () {
     }
 });
 
+// scroll hide background image
+$(document).ready(function() {
+    $(document).scroll(function(){
+        if ($(document).scrollTop() > 280) {
+            $(".bg-image-holder").css({ opacity: '0' })
+            $("body").css({ backgroundColor: '#E8C4C9' })
+        } else {
+            $(".bg-image-holder").css({ opacity: '.25' })
+            $("body").css({ backgroundColor: 'var(--global-bg-color)' })
+        }
+    })
+})
