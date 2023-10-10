@@ -3,7 +3,7 @@ layout: home
 title: home
 permalink: /
 # subtitle: Welcome to my portfolio!
-display_categories: [some of my projects]
+display_categories: [my work_]
 social: false  # includes social icons at the bottom of the page
 welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.

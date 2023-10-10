@@ -608,13 +608,25 @@ footer.sticky-bottom {
     }
   }
 
+  // h2.category {
+  //   color: var(--global-divider-color);
+  //   border-bottom: 1px solid var(--global-divider-color);
+  //   padding-top: 0.5rem;
+  //   margin-top: 2rem;
+  //   margin-bottom: 1rem;
+  //   text-align: right;
+  // }
+
   h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    text-align: right;
+    text-align: left;
+    font-size: 2.75rem;
+    padding-left: 22px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
   }
 }
 
@@ -1190,14 +1202,17 @@ nav[data-toggle="toc"] {
 }
 
 /*Homepage horizontal slider*/
-// .gallery-wrapper {
-//   overflow-x: hidden;
-// }
+@media (hover: none) {
+  .gallery-wrapper {
+    overflow-x: hidden;
+  }
+}
 
 .gallery {
   width: fit-content ;
   display: flex;
   flex-wrap: nowrap;
+  height: auto;
 }
 
 .horizontal.grid-item {
