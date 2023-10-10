@@ -11,8 +11,8 @@
   --global-text-color: #334155;
   --global-text-color-light: #828282;
   --global-theme-color: #1C4975;
-  --global-hover-color: #1C4975;
-  --global-hover-text-color: #ffffff;
+  --global-hover-color: #EA580C;
+  --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #1C1C1D;
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
@@ -164,6 +164,16 @@ h1 {
   font-size: 4rem;
 }
 
+.welcome-text {
+  font-size: 5.5rem;
+  letter-spacing: -2px;
+}
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2.75rem;
+  }
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -240,11 +250,21 @@ blockquote {
   display: flex;
   align-items: center;
 }
+.card figure {
+  transition: 0.7s ease-in-out;
+  overflow: hidden;
+}
+.card figure img {
+  transition: 0.7s ease-out;
+}
 .card.hoverable:hover {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.22);
-  box-shadow: 0px 3px 4px 0px rgba(255, 255, 255, 0.1), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset;
+  box-shadow: 0px 3px 4px 0px rgba(94, 151, 165, 0.1), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(20px);
+}
+.card.hoverable:hover img {
+  scale: 1.04;
 }
 
 .card-body {
@@ -313,8 +333,10 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
-  margin: 34px 60px 2px;
+  margin: 32px 60px 6px;
   border-radius: 500px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
 }
 
 .navbar .dropdown-menu {
@@ -1088,6 +1110,28 @@ nav[data-toggle=toc] .nav-link.active:hover {
   border-radius: 500px;
   margin-top: 10rem;
   margin-bottom: 40px;
+}
+
+/*Homepage horizontal slider*/
+.gallery {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.horizontal.grid-item {
+  width: 33vw;
+  max-width: 30em;
+  height: auto;
+  padding-right: 16px;
+  /* Media query for screen sizes up to 768px */
+}
+@media (max-width: 768px) {
+  .horizontal.grid-item {
+    max-width: 80em;
+    width: 97vw;
+    height: auto;
+  }
 }
 
 /*******************************************************************************
