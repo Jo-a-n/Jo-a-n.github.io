@@ -21,15 +21,20 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
-  {%- assign categorized_projects = site.projects | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
   
   <!-- Generate cards for each project -->
   
   {% if page.horizontal -%}
+    <!-- Display categorized projects -->
+    {%- for category in page.display_categories %}
+    <h2 class="category cta">{{ category }}
+      <div class="text-right cta">
+        <a href="/projects" class="btn-io">explore projects -></a>
+      </div>
+    </h2>
+    {%- assign categorized_projects = site.projects | where: "category", category -%}
+    {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+    {% endfor %}
   <div class="container">
     <div class="row row-cols-2">
     {%- for project in sorted_projects -%}
@@ -39,7 +44,17 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
   </div>
 
   {%- else -%}
-  <div class="gallery-wrapper">
+    <div class="gallery-wrapper">
+      <!-- Display categorized projects -->
+      {%- for category in page.display_categories %}
+      <h2 class="category cta">{{ category }}
+        <div class="text-right cta">
+          <a href="/projects" class="btn-io">explore projects -></a>
+        </div>
+      </h2>
+      {%- assign categorized_projects = site.projects | where: "category", category -%}
+      {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+      {% endfor %}
     <div class="gallery">
       {%- for project in sorted_projects -%}
        {% include projects_home.html %}
@@ -48,11 +63,6 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
   </div>
 
   {%- endif -%}
-  {% endfor %}
 {%- endif -%}
 
-<!-- button to projects -->
-<div class="text-right">
-  <a href="/projects" class="mt-1 btn-io">explore projects -></a>
-</div>
-<br>
+
