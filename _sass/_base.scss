@@ -29,6 +29,7 @@ h1 {
 .welcome-text {
   font-size: 5.5rem;
   letter-spacing: -2px; 
+  margin-bottom: 8rem;
 
   @media (max-width: 768px) {
     font-size: 2.75rem;
@@ -236,7 +237,7 @@ blockquote {
   background-color: var(--global-bg-color);
   opacity: 0.95;
   margin: 32px 60px 6px;
-  border-radius: 500px;
+  border-radius: 28px;
   text-transform: uppercase;
   font-size: 0.875rem;
 }
@@ -625,8 +626,13 @@ footer.sticky-bottom {
     text-align: left;
     font-size: 2.75rem;
     padding-left: 22px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
     font-weight: 400;
+
+    @media (max-width:540px) {
+      padding-left: 12px;
+      font-size: 1.9rem;
+    }
   }
 }
 
@@ -1090,7 +1096,7 @@ nav[data-toggle="toc"] {
 
 /* button */
 .btn-io {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   padding: 16px 24px;
   text-align: center;
@@ -1101,7 +1107,11 @@ nav[data-toggle="toc"] {
   border: none;
   text-decoration: none !important;
   display: inline-block;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px -1px 12px 0px rgba(255, 255, 255, 0.15) inset;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.06), 0px 0px 4px 0px rgba(0, 0, 0, 0.08), 0px -1px 12px 0px rgba(255, 255, 255, 0.15) inset;
+
+  @media (max-width:478px) {
+    font-size: 1rem;    
+  }
 }
 
 .btn-io:hover {
@@ -1211,6 +1221,10 @@ nav[data-toggle="toc"] {
   }
 }
 
+.gallery-wrapper {
+  margin-bottom: 8rem;
+}
+
 .gallery {
   width: fit-content ;
   display: flex;
@@ -1247,4 +1261,20 @@ nav[data-toggle="toc"] {
 
 .cta.cta {
   flex: 1;
+}
+
+.fl-container {
+  display: flex;
+
+  .txt-right {
+    flex-basis: 760px;
+    margin: 0 12px;
+    @media (min-width:478px) {
+      text-align: right;      
+    }
+  }
+}
+
+.fl-container.fl-right {
+  justify-content: end;
 }

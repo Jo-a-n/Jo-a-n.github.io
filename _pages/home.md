@@ -65,4 +65,30 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
   {%- endif -%}
 {%- endif -%}
 
+<br>
+<br>
+<h2 class="category cta">{{ "people_" }}
+    <div class="text-right cta">
+      <a href="/cv" class="btn-io">cv -></a>
+    </div>
+</h2>
+<br>
+<div class="fl-container fl-right">
+  <div class="txt-right">
+    <p>What I like most about the UX field is that it stands <b><i>in between.</i></b></p>
+    <p>
+    The unique position of UX, acts as a junction point between business, marketing, and development. By collaborating with people in diverse projects from different domains, I learn and explore knowledge, experiences and methodologies beyond the UX field.<br>
+    <b>Sharing different experiences, mindsets and goals through work</b>, is the best part of UX for me.
+    </p>
+    <p>I've collaborated in various company web projects, each adding to my journey in the field.</p>
+  </div>
+</div>
 
+<div class="row mt-4 mx-2 mx-md-0">
+  <img class="col-6 col-md-2" src = "/assets/icn/1.svg" alt="UNI-PHARMA logo"/>
+  <img class="col-6 col-md-2" src = "/assets/icn/2.svg" alt="Dipylon logo"/>
+  <img class="col-6 col-md-2" src = "/assets/icn/3.svg" alt="Dromeas Eshop logo"/>
+  <img class="col-6 col-md-2" src = "/assets/icn/4.svg" alt="CGWorks logo"/>
+  <img class="col-6 col-md-2" src = "/assets/icn/5.svg" alt="Intercomm Foods logo"/>
+  <img class="col-6 col-md-2" src = "/assets/icn/6.svg" alt="elite strom logo"/>
+</div>
