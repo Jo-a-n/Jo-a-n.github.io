@@ -6,11 +6,13 @@
  * Themes
  ******************************************************************************/
 :root {
-  --global-bg-color: #E4FAF8;
+  --global-bg-color: #F4EEF1;
+  --scroll-bg-color: #F4EEF1;
   --global-code-bg-color: rgba(28, 73, 117, 0.05);
   --global-text-color: #334155;
   --global-text-color-light: #828282;
-  --global-theme-color: #1C4975;
+  --global-theme-color: #334155;
+  --navbar-active-item: #EA580C;
   --global-hover-color: #EA580C;
   --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #1C1C1D;
@@ -19,6 +21,8 @@
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #ffffff;
+  --global-card-text-color: #334155;
+  --global-btn-color: #CBD5E1;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -31,6 +35,9 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-caption-color: #646464;
+  --bg-opacity: 0.28;
+  --bg-filter: saturate(1);
 }
 :root .fa-sun {
   display: none;
@@ -49,18 +56,22 @@
 
 html[data-theme=dark] {
   --global-bg-color: #1C1C1D;
+  --scroll-bg-color: #1C1C1D;
   --global-code-bg-color: #2c3237;
-  --global-text-color: #e8e8e8;
+  --global-text-color: #F1F5F9;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #2698BA;
+  --global-theme-color: #CBD5E1;
+  --navbar-active-item: #2698BA;
   --global-hover-color: #2698BA;
-  --global-hover-text-color: #ffffff;
+  --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #e8e8e8;
   --global-footer-text-color: #1C1C1D;
   --global-footer-link-color: #242424;
   --global-distill-app-color: #e8e8e8;
   --global-divider-color: #424246;
   --global-card-bg-color: #212529;
+  --global-card-text-color: #CBD5E1;
+  --global-btn-color: #19647a;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -73,6 +84,9 @@ html[data-theme=dark] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-caption-color: #979797;
+  --bg-opacity: 0.05;
+  --bg-filter: saturate(0%);
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
@@ -110,7 +124,8 @@ body .bg-image-holder {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.25;
+  opacity: var(--bg-opacity);
+  filter: var(--bg-filter);
   z-index: -1;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -225,7 +240,7 @@ blockquote {
   text-align: center;
   font-weight: 300;
   font-style: italic;
-  color: #646464;
+  color: var(--global-caption-color);
 }
 
 .card {
@@ -269,6 +284,9 @@ blockquote {
   box-shadow: 0px 3px 4px 0px rgba(94, 151, 165, 0.1), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(20px);
 }
+.card.hoverable:hover figure {
+  border-radius: 16px;
+}
 .card.hoverable:hover img {
   scale: 1.04;
 }
@@ -278,14 +296,14 @@ blockquote {
 }
 
 .card-text {
-  color: #475569 !important;
+  color: var(--global-card-text-color) !important;
   margin-bottom: 8px;
   line-height: 1.2;
   font-size: 0.875rem;
 }
 
 .card-genre {
-  color: #475569;
+  color: var(--global-card-text-color);
   font-weight: 400;
 }
 
@@ -390,7 +408,7 @@ blockquote {
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   background-color: inherit;
   font-weight: bolder;
-  color: var(--global-theme-color);
+  color: var(--navbar-active-item);
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
   color: var(--global-hover-color);
@@ -1030,7 +1048,7 @@ nav[data-toggle=toc] .nav-link.active:hover {
   padding: 16px 24px;
   text-align: center;
   border-radius: 16px;
-  background-color: #CBD5E1;
+  background-color: var(--global-btn-color);
   color: var(--global-text-color);
   text-transform: uppercase;
   border: none;

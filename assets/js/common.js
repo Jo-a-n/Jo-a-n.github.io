@@ -28,13 +28,16 @@ $(document).ready(function() {
     $(document).scroll(function(){
         if ($(document).scrollTop() > 240) {
             $(".bg-image-holder").css({ opacity: '0.02' })
-            $("body").css({ backgroundColor: 'rgb(244, 244, 244)' })
+            $("body").css({ backgroundColor: 'var(--scroll-bg-color)' })
         } else {
-            $(".bg-image-holder").css({ opacity: '.25' })
+            $(".bg-image-holder").css({ opacity: 'var(--bg-opacity)' })
             $("body").css({ backgroundColor: 'var(--global-bg-color)' })
         }
     })
 })
+
+
+//Horizontal scroll on homepage
 
 //Get the gallery from th DOM
 const gallery = document.querySelector(".gallery");

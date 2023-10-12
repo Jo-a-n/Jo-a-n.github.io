@@ -3,11 +3,15 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$pastelcyan-color};
+  // --global-bg-color: #{$pastelcyan-color};
+  --global-bg-color: #{$pastelpink-color};
+  // --scroll-bg-color: #{$almost-white-color};
+  --scroll-bg-color: #{$pastelpink-color-light};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$slate-700};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
+  --global-theme-color: #{$slate-700};
+  --navbar-active-item: #{$orange-600};
   --global-hover-color: #{$orange-600};
   --global-hover-text-color: #{$orange-600};
   --global-footer-bg-color: #{$grey-color-dark};
@@ -16,6 +20,8 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
+  --global-card-text-color: #{$slate-700};
+  --global-btn-color: #CBD5E1;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -29,6 +35,10 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-caption-color: #{lighten($color: #242424, $amount: 25%)};
+
+  --bg-opacity: 0.28;
+  --bg-filter: saturate(1);
 
   .fa-sun {
     display : none;
@@ -49,18 +59,22 @@
 
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
+  --scroll-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
+  --global-text-color: #{$slate-100};
   --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$cyan-color};
+  --global-theme-color: #{$slate-300};
+  --navbar-active-item: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
+  --global-hover-text-color: #{$orange-600};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
+  --global-card-text-color: #{$slate-300};
+  --global-btn-color: #{darken($cyan-color, 15%)};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -74,6 +88,10 @@ html[data-theme='dark'] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-caption-color: #{lighten($color: #242424, $amount: 45%)};
+  
+  --bg-opacity: 0.05;
+  --bg-filter: saturate(0%);
 
   .fa-sun {
     padding-left: 10px;
