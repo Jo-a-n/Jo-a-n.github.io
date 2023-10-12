@@ -1133,7 +1133,7 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 
 .text-width {
-  width: 760px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
