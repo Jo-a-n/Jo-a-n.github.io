@@ -26,7 +26,7 @@ $(document).ready(function () {
 // scroll hide background image
 $(document).ready(function() {
     $(document).scroll(function(){
-        if ($(document).scrollTop() > 240) {
+        if ($(document).scrollTop() > 360) {
             $(".bg-image-holder").css({ opacity: '0.02' })
             $("body").css({ backgroundColor: 'var(--scroll-bg-color)' })
         } else {
