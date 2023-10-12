@@ -32,7 +32,7 @@ h1 {
   margin-bottom: 8rem;
 
   @media (max-width: 768px) {
-    font-size: 2.75rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -108,6 +108,10 @@ blockquote {
   overflow: hidden;
   box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.04); 
   padding: 16px 24px;
+
+  @media (max-width: 560px) {
+    padding: 24px 12px;
+  }
 
   img {
     width: 100%;
@@ -236,10 +240,19 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
-  margin: 32px 60px 6px;
+  margin: 30px 60px 8px;
   border-radius: 28px;
   text-transform: uppercase;
   font-size: 0.875rem;
+  overflow-x: hidden;
+  //calc width by subtracting margin
+  max-width: calc(100vw - 120px);
+
+  @media (max-width: 576px) {
+    margin: 20px 20px 6px;
+    //calc width by subtracting margin
+    max-width: calc(100vw - 40px);
+  }
 }
 
 .navbar .dropdown-menu {
@@ -609,7 +622,8 @@ footer.sticky-bottom {
     }
   }
 
-  // h2.category {
+  ////OG h2.category 
+  //h2.category {
   //   color: var(--global-divider-color);
   //   border-bottom: 1px solid var(--global-divider-color);
   //   padding-top: 0.5rem;
@@ -618,24 +632,25 @@ footer.sticky-bottom {
   //   text-align: right;
   // }
 
-  h2.category {
-    color: var(--global-text-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: left;
-    font-size: 2.75rem;
-    padding-left: 22px;
-    margin-bottom: 1.75rem;
-    font-weight: 400;
-
-    @media (max-width:540px) {
-      padding-left: 12px;
-      font-size: 1.9rem;
-    }
-  }
 }
 
+h2.category {
+  color: var(--global-text-color);
+  padding-top: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 2.75rem;
+  padding-left: 22px;
+  margin-bottom: 1.75rem;
+  font-weight: 400 !important;
+
+  @media (max-width: 560px) {
+    padding-left: 12px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
 
 // Publications
 
@@ -1215,18 +1230,33 @@ nav[data-toggle="toc"] {
 }
 
 /*Homepage horizontal slider*/
-@media (hover: none) {
+
+//Makes gallery scrollable by touch
+@media (hover:none) or (max-width: 560px) {
   .gallery-wrapper {
-    overflow-x: hidden;
+    overflow-x: scroll;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media ((hover: hover) and (pointer: fine)) and (min-width: 560px) {
+  .mob-only {
+    display: none;
   }
 }
 
 .gallery-wrapper {
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: 560px) {
+    margin-bottom: 5rem;
+  }
 }
 
 .gallery {
-  width: fit-content ;
+  width: fit-content;
   display: flex;
   flex-wrap: nowrap;
   height: auto;
@@ -1238,17 +1268,17 @@ nav[data-toggle="toc"] {
   height: auto;
   padding-right: 16px;
   
-  // /* Media query for screen sizes up to 840px */
-  // @media (max-width: 840px) {
-  //   max-width: 80em;
-  //   width: 48vw; 
-  //   height: auto;
-  // }
-  
   /* Media query for screen sizes up to 768px */
   @media (max-width: 768px) {
     max-width: 80em;
-    width: 97vw; 
+    width: 49vw; 
+    height: auto;
+  }
+  
+  /* Media query for screen sizes up to 560px */
+  @media (max-width: 560px) {
+    max-width: 80em;
+    width: 80vw; 
     height: auto;
   }
 }

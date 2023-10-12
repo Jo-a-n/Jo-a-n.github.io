@@ -43,7 +43,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://192.168.1.30:4000/">
 
     <!-- Dark Mode -->
     
@@ -151,15 +151,26 @@
   
   <!-- Generate cards for each project -->
   
-  <div class="gallery-wrapper">
-      <!-- Display categorized projects -->
+  <!-- Display categorized projects on screens < 560px-->
+    <div class="mob-only">
       <h2 class="category cta">my work_
         <div class="text-right cta">
-          <a href="/projects" class="btn-io">explore projects -&gt;</a>
+          <a href="/projects" class="btn-io">all projects -&gt;</a>
         </div>
       </h2>
       
-    <div class="gallery">
+    </div>
+    <div class="gallery-wrapper">
+      <!-- Display categorized projects -->
+      <div class="desktop-only">
+        <h2 class="category cta">my work_
+          <div class="text-right cta">
+            <a href="/projects" class="btn-io">see all projects -&gt;</a>
+          </div>
+        </h2>
+        
+      </div>
+      <div class="gallery">
 <!-- _includes/projects.html -->
 
 <!--Cards-->
@@ -353,18 +364,18 @@
   </a>
 </div>
 
+      </div>
     </div>
-  </div>
-<br>
-<br>
+</div>
+
 <h2 class="category cta">people_
-    <div class="text-right cta">
-      <a href="/cv" class="btn-io">cv -&gt;</a>
-    </div>
+  <div class="text-right cta">
+    <a href="/cv" class="btn-io">cv -&gt;</a>
+  </div>
 </h2>
-<br>
+<p><br></p>
 <div class="fl-container fl-right">
-  <div class="text-right">
+  <div class="txt-right">
     <p>What I like most about the UX field is that it stands <b><i>in between.</i></b></p>
     <p>
     The unique position of UX, acts as a junction point between business, marketing, and development. By collaborating with people in diverse projects from different domains, I learn and explore knowledge, experiences and methodologies beyond the UX field.<br>
@@ -374,14 +385,13 @@
   </div>
 </div>
 
-<div class="row">
-  <img class="col-6 col-md" src="/assets/icn/1.svg" alt="UNI-PHARMA logo">
-  <img class="col-6 col-md" src="/assets/icn/2.svg" alt="Dipylon logo">
-  <img class="col-6 col-md" src="/assets/icn/3.svg" alt="Dromeas Eshop logo">
-  <img class="col-6 col-md" src="/assets/icn/4.svg" alt="CGWorks logo">
-  <img class="col-6 col-md" src="/assets/icn/5.svg" alt="Intercomm Foods logo">
-  <img class="col-6 col-md" src="/assets/icn/6.svg" alt="elite strom logo">
-</div>
+<div class="row mt-4 mx-2 mx-md-0">
+  <img class="col-6 col-md-2" src="/assets/icn/1.svg" alt="UNI-PHARMA logo">
+  <img class="col-6 col-md-2" src="/assets/icn/2.svg" alt="Dipylon logo">
+  <img class="col-6 col-md-2" src="/assets/icn/3.svg" alt="Dromeas Eshop logo">
+  <img class="col-6 col-md-2" src="/assets/icn/4.svg" alt="CGWorks logo">
+  <img class="col-6 col-md-2" src="/assets/icn/5.svg" alt="Intercomm Foods logo">
+  <img class="col-6 col-md-2" src="/assets/icn/6.svg" alt="elite strom logo">
 </div>
 
           </div>

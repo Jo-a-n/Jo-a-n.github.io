@@ -42,29 +42,37 @@ const gallerywrapper = document.querySelector(".gallery-wrapper");
 //Get the gallery total width
 let galleryWidth = gallery.offsetWidth;
 let gallerywrapperWidth = gallerywrapper.offsetWidth;
+//This is a static var where I put the padding-right found in gallery
+let paddingright = 16;
 /*Get the ammount to scroll horizontally 
 by subtracting the window width 
 from the full width of the gallery*/
-let ammountToScroll = galleryWidth - gallerywrapperWidth;
+let ammountToScroll = galleryWidth - gallerywrapperWidth - paddingright;
 console.log(ammountToScroll)
 
+gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.create({
-    trigger: ".gallery-wrapper",
-    start: "top 220px",
-    pin: true,
-    onUpdate: (self) => {
-        // console.log(
-        //   "progress:",
-        //   self.progress.toFixed(3),
-        //   "direction:",
-        //   self.direction,
-        //   "velocity",
-        //   self.getVelocity()
-        // );
-        $('.gallery').css({transform: `translate(-${self.progress.toFixed(3) * ammountToScroll}px)`})
-      },
-})
+//responsive
+let mm = gsap.matchMedia();
+
+mm.add("(min-width: 560px)", () => {
+    ScrollTrigger.create({
+        trigger: ".gallery-wrapper",
+        start: "top 220px",
+        pin: true,
+        onUpdate: (self) => {
+            // console.log(
+            //   "progress:",
+            //   self.progress.toFixed(3),
+            //   "direction:",
+            //   self.direction,
+            //   "velocity",
+            //   self.getVelocity()
+            // );
+            $('.gallery').css({transform: `translate(-${self.progress.toFixed(3) * ammountToScroll}px)`})
+        },
+    });
+});
 
 //Initialize Lenis smooth scrolling
 const lenis = new Lenis();

@@ -29,48 +29,62 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
     {%- for category in page.display_categories %}
     <h2 class="category cta">{{ category }}
       <div class="text-right cta">
-        <a href="/projects" class="btn-io">explore projects -></a>
+        <a href="/projects" class="btn-io">all projects -></a>
       </div>
     </h2>
     {%- assign categorized_projects = site.projects | where: "category", category -%}
     {%- assign sorted_projects = categorized_projects | sort: "importance" %}
     {% endfor %}
-  <div class="container">
-    <div class="row row-cols-2">
-    {%- for project in sorted_projects -%}
-      {% include projects_horizontal.html %}
-    {%- endfor %}
+    <div class="container">
+      <div class="row row-cols-2">
+      {%- for project in sorted_projects -%}
+        {% include projects_horizontal.html %}
+      {%- endfor %}
+      </div>
     </div>
-  </div>
 
   {%- else -%}
-    <div class="gallery-wrapper">
-      <!-- Display categorized projects -->
+    <!-- Display categorized projects on screens < 560px-->
+    <div class="mob-only">
       {%- for category in page.display_categories %}
       <h2 class="category cta">{{ category }}
         <div class="text-right cta">
-          <a href="/projects" class="btn-io">explore projects -></a>
+          <a href="/projects" class="btn-io">all projects -></a>
         </div>
       </h2>
       {%- assign categorized_projects = site.projects | where: "category", category -%}
       {%- assign sorted_projects = categorized_projects | sort: "importance" %}
       {% endfor %}
-    <div class="gallery">
-      {%- for project in sorted_projects -%}
-       {% include projects_home.html %}
-      {%- endfor %}
     </div>
-  </div>
+    <div class="gallery-wrapper">
+      <!-- Display categorized projects -->
+      <div class="desktop-only">
+        {%- for category in page.display_categories %}
+        <h2 class="category cta">{{ category }}
+          <div class="text-right cta">
+            <a href="/projects" class="btn-io">see all projects -></a>
+          </div>
+        </h2>
+        {%- assign categorized_projects = site.projects | where: "category", category -%}
+        {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+        {% endfor %}
+      </div>
+      <div class="gallery">
+        {%- for project in sorted_projects -%}
+        {% include projects_home.html %}
+        {%- endfor %}
+      </div>
+    </div>
 
   {%- endif -%}
 {%- endif -%}
+</div>
 
-<br>
-<br>
+
 <h2 class="category cta">{{ "people_" }}
-    <div class="text-right cta">
-      <a href="/cv" class="btn-io">cv -></a>
-    </div>
+  <div class="text-right cta">
+    <a href="/cv" class="btn-io">cv -></a>
+  </div>
 </h2>
 <br>
 <div class="fl-container fl-right">

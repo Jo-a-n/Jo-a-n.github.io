@@ -1,7 +1,7 @@
 ---
-layout: about
+layout: home
 title: home
-permalink: /
+permalink: /home-backup
 subtitle: Hi there, I’m Ioanna! 
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
