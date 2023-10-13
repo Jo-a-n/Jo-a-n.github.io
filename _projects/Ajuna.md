@@ -36,31 +36,31 @@ category: [ui/ux]
 
 <div class="row mx-4 justify-content-center">
     <div class="col-6 col-sm mt-md-0">
-        {% include figure.html path="assets/img/ajuna/1.jpg" title="Crowdloan is live! hero section" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/1.jpg" title="Crowdloan is live! hero section" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-md-0">
-        {% include figure.html path="assets/img/ajuna/2.jpg" title="A fancy pie" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/2.jpg" title="A fancy pie" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-md-0">
-        {% include figure.html path="assets/img/ajuna/3.jpg" title="Some links to Defi Apps" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/3.jpg" title="Some links to Defi Apps" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-md-0">
-        {% include figure.html path="assets/img/ajuna/4.jpg" title="Connect section on footer" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/4.jpg" title="Connect section on footer" class="img-fluid rounded-xl z-depth-1" %}
     </div>
 </div>
 
 <div class="row mx-4 my-2 justify-content-center">
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/ajuna/5.jpg" title="The project roadmap" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/5.jpg" title="The project roadmap" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/ajuna/6.jpg" title="Career opportunities page" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/6.jpg" title="Career opportunities page" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/ajuna/7.jpg" title="A fun section" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/7.jpg" title="A fun section" class="img-fluid rounded-xl z-depth-1" %}
     </div>
     <div class="col-6 col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/ajuna/8.jpg" title="Quick facts badges" class="img-fluid rounded-xl border z-depth-1" %}
+        {% include figure.html path="assets/img/ajuna/8.jpg" title="Quick facts badges" class="img-fluid rounded-xl z-depth-1" %}
     </div>
 </div>
 <div class="caption mb-4">

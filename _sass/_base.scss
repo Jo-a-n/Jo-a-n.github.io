@@ -635,6 +635,11 @@ footer.sticky-bottom {
 
 }
 
+.post.narrow {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h2.category {
   color: var(--global-text-color);
   padding-top: 0.5rem;

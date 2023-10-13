@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wide
 title: projects
 permalink: /projects/
 # description: Past projects, case studies and other stuff I've done.
