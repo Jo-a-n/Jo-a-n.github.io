@@ -1204,7 +1204,6 @@ nav[data-toggle="toc"] {
 
 /*Icons*/
 .down-arrow {
-  background: url('/assets/icn/ep_arrow-down.svg');
   height: 32px;
   width: 32px;
   display: block;
@@ -1313,4 +1312,12 @@ nav[data-toggle="toc"] {
 
 .fl-container.fl-right {
   justify-content: end;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#content {
+  scroll-margin: 1.5rem;
 }
