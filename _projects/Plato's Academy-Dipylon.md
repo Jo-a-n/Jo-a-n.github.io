@@ -6,7 +6,7 @@ description: UI/UX Design, Graphic Design, Art Direction
 year: 2023
 img: /assets/img/cover-dipylon.jpg
 importance: 2
-category: [my work_, work]
+category: [my work_, ui/ux]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
