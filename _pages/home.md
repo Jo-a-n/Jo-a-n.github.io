@@ -49,7 +49,7 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
       {%- for category in page.display_categories %}
       <h2 class="category cta">{{ category }}
         <div class="text-right cta">
-          <a href="/projects" class="btn-io">all projects -></a>
+          <a href="/projects" class="btn-io">projects -></a>
         </div>
       </h2>
       {%- assign categorized_projects = site.projects | where: "category", category -%}
