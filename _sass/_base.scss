@@ -237,7 +237,6 @@ blockquote {
 
 .navbar {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
   margin: 30px 60px 8px;
@@ -247,8 +246,9 @@ blockquote {
   overflow-x: hidden;
   //calc width by subtracting margin
   max-width: calc(100vw - 120px);
+  backdrop-filter: blur(20px);
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     margin: 20px 20px 6px;
     //calc width by subtracting margin
     max-width: calc(100vw - 40px);
@@ -382,6 +382,7 @@ blockquote {
   }
 }
 
+//Desktop navbar behaviour
 .desktop-nav .navbar {
   justify-content: center;
   
@@ -416,9 +417,37 @@ blockquote {
   z-index: 10;
 }
 
-// .z-navbar .col-6 {
-//   min-width: 640px;
-// }
+.navbar-left {
+  display: flex;
+  align-items: center;
+
+  a svg {
+  color: var(--global-text-color);
+  
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+
+  .social-btn a {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  margin-left: 8px;
+  padding: 8px 10px;
+  border: 2px solid var(--global-bg-color);
+  border-radius: 28px;
+  background-color: var(--social-btn-color) ;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  backdrop-filter: blur(20px); 
+
+    &:hover {
+      text-decoration: none;
+      background-color: var(--global-hover-color);
+      color: white;
+      border: 2px solid var(--global-hover-color);
+    }
+  }
+} 
 
 // Social (bottom)
 
@@ -952,6 +981,9 @@ progress {
   left: 0;
   top: 56px;
   z-index: 10;
+  @media (min-width: 768px) {
+    top: 94px !important;
+  }
 
   /* Dimensions */
   width: 100%;
@@ -988,7 +1020,7 @@ progress::-moz-progress-bar {
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 56px;
+  top: 0px;
   left: 0;
   height: 5px;
   display: block;

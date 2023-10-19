@@ -23,6 +23,8 @@
   --global-card-text-color: #{$slate-500};
   --global-btn-color: #CBD5E1;
 
+  --social-btn-color: rgba(244, 238, 241, 0.80);
+
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -75,6 +77,8 @@ html[data-theme='dark'] {
   --global-card-bg-color: #{$grey-900};
   --global-card-text-color: #{$slate-300};
   --global-btn-color: #{darken($cyan-color, 15%)};
+
+  --social-btn-color: #{$grey-color-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

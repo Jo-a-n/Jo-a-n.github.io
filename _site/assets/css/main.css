@@ -23,6 +23,7 @@
   --global-card-bg-color: #ffffff;
   --global-card-text-color: #64748B;
   --global-btn-color: #CBD5E1;
+  --social-btn-color: rgba(244, 238, 241, 0.80);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -72,6 +73,7 @@ html[data-theme=dark] {
   --global-card-bg-color: #212529;
   --global-card-text-color: #CBD5E1;
   --global-btn-color: #19647a;
+  --social-btn-color: #1C1C1D;
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -133,7 +135,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 body.fixed-top-nav {
-  padding-top: 56px;
+  padding-top: 32px !important;
 }
 
 body.sticky-bottom-footer {
@@ -354,7 +356,6 @@ blockquote {
 
 .navbar {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
   margin: 30px 60px 8px;
@@ -363,8 +364,9 @@ blockquote {
   font-size: 0.875rem;
   overflow-x: hidden;
   max-width: calc(100vw - 120px);
+  backdrop-filter: blur(20px);
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
     margin: 20px 20px 6px;
     max-width: calc(100vw - 40px);
@@ -500,6 +502,34 @@ blockquote {
 
 .z-navbar {
   z-index: 10;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-left a svg {
+  color: var(--global-text-color);
+}
+.navbar-left a svg:hover {
+  color: var(--global-hover-color);
+}
+.navbar-left .social-btn a {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  margin-left: 8px;
+  padding: 8px 10px;
+  border: 2px solid var(--global-bg-color);
+  border-radius: 28px;
+  background-color: var(--social-btn-color);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  backdrop-filter: blur(20px);
+}
+.navbar-left .social-btn a:hover {
+  text-decoration: none;
+  background-color: var(--global-hover-color);
+  color: white;
+  border: 2px solid var(--global-hover-color);
 }
 
 .social {
@@ -930,6 +960,11 @@ progress {
   /* Progress bar value for IE10  */
   color: var(--global-theme-color);
 }
+@media (min-width: 768px) {
+  progress {
+    top: 94px !important;
+  }
+}
 
 progress::-webkit-progress-bar {
   background-color: transparent;
@@ -947,7 +982,7 @@ progress::-moz-progress-bar {
   width: 100%;
   background-color: transparent;
   position: fixed;
-  top: 56px;
+  top: 0px;
   left: 0;
   height: 5px;
   display: block;
