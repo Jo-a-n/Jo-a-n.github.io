@@ -43,7 +43,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://192.168.1.4:4000/projects/">
+    <link rel="canonical" href="http://localhost:4000/projects/">
 
     <!-- Dark Mode -->
     
@@ -106,7 +106,7 @@
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+                <button class="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
@@ -115,13 +115,66 @@
           </div>
         </div>
       </nav>
+      
+            <!-- Scrolling Progress Bar -->
+            <progress id="progress" value="0">
+              <div class="progress-container">
+                <span class="progress-bar"></span>
+              </div>
+            </progress>
 
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
+      <!-- desktop navbar -->
+      <div class="desktop-nav z-navbar d-none d-lg-block w-100 position-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Ioanna </span>Lioliou</a>
+            </div>
+
+            <div class="col-6">
+              <div class="px-5 m-0 navbar navbar-light">
+                <ul class="navbar-nav">
+                  <!-- About -->
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/">home</a>
+                  </li>
+                  
+                  <!-- Blog -->
+                  <!-- <li class="nav-item ">
+                    <a class="nav-link" href="/blog/">blog</a>
+                  </li> -->
+                  <!-- Other pages -->
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/cv/">cv</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/about/">about</a>
+                  </li>
+                  <!-- Toogle theme mode -->
+                  <li class="toggle-container pb-2">
+                    <button class="light-toggle" title="Change theme">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>              
+            </div>
+            
+          </div>
         </div>
-      </progress>
+        
+          <!-- Scrolling Progress Bar -->
+          <progress id="progress" class="position-relative" value="0">
+            <div class="progress-container">
+              <span class="progress-bar"></span>
+            </div>
+          </progress>
+      </div>
+
     </header>
 
 

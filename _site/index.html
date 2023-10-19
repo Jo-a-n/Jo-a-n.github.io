@@ -43,7 +43,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://192.168.1.4:4000/">
+    <link rel="canonical" href="http://localhost:4000/">
 
     <!-- Dark Mode -->
     
@@ -113,7 +113,7 @@
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+                <button class="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
@@ -122,13 +122,73 @@
           </div>
         </div>
       </nav>
+      
+            <!-- Scrolling Progress Bar -->
+            <progress id="progress" value="0">
+              <div class="progress-container">
+                <span class="progress-bar"></span>
+              </div>
+            </progress>
 
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
+      <!-- desktop navbar -->
+      <div class="desktop-nav z-navbar d-none d-lg-block w-100 position-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <!-- Social Icons -->
+              <div class="navbar-brand social">
+                <a href="mailto:%6A%6C%69%6F%6C%69%6F%75@%6F%75%74%6C%6F%6F%6B.%63%6F%6D" title="email"><i class="fas fa-envelope fa-xs"></i></a>
+            <a href="https://www.linkedin.com/in/jlioliou" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin-in fa-xs"></i></a>
+            
+
+              </div>
+              
+            </div>
+
+            <div class="col-6">
+              <div class="px-5 m-0 navbar navbar-light">
+                <ul class="navbar-nav">
+                  <!-- About -->
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">home<span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <!-- Blog -->
+                  <!-- <li class="nav-item ">
+                    <a class="nav-link" href="/blog/">blog</a>
+                  </li> -->
+                  <!-- Other pages -->
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/projects/">projects</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/cv/">cv</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/about/">about</a>
+                  </li>
+                  <!-- Toogle theme mode -->
+                  <li class="toggle-container pb-2">
+                    <button class="light-toggle" title="Change theme">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>              
+            </div>
+            
+          </div>
         </div>
-      </progress>
+        
+          <!-- Scrolling Progress Bar -->
+          <progress id="progress" class="position-relative" value="0">
+            <div class="progress-container">
+              <span class="progress-bar"></span>
+            </div>
+          </progress>
+      </div>
+
     </header>
 
 

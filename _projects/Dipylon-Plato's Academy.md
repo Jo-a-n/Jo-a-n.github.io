@@ -20,7 +20,7 @@ category: [my work_, ui/ux]
 
 <div class="videoWrapper">
   <!-- CSS tricks fluid-width-video -->
-  {% include figure.html path="assets/img/dipylon/dipylon-videoload.jpg" title="landing page" class="img-fluid rounded z-depth-1" %}
+  {% include figure.html path="assets/img/dipylon/dipylon-videoload.jpg" title="landing page" class="img-fluid rounded-xl z-depth-1" %}
   <iframe width="560" height="349" loading="lazy" src="https://player.vimeo.com/video/801967900?background=1" rel="noopener noreferrer" frameborder="0" allowfullscreen>
   </iframe>
 </div>

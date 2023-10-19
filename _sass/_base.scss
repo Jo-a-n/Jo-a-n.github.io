@@ -371,16 +371,54 @@ blockquote {
   }
 }
 
-#light-toggle {
+.light-toggle {
   padding: 0;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
-
+  
   &:hover {
     color: var(--global-hover-color);
   }
 }
+
+.desktop-nav .navbar {
+  justify-content: center;
+  
+  .navbar-nav {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 32px;
+  
+  @media (max-width: 1180px) {
+    gap: 24px;
+   }
+  }
+}
+
+.desktop-nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 1180px) {
+    gap: 24px;
+  }
+}
+
+.desktop-nav li:not(:last-child):after {
+  border-left: 1px solid;
+  height: 18px;
+  content: "";
+}
+
+.z-navbar {
+  z-index: 10;
+}
+
+// .z-navbar .col-6 {
+//   min-width: 640px;
+// }
 
 // Social (bottom)
 
