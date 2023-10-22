@@ -12,7 +12,6 @@
   --global-text-color: #334155;
   --global-text-color-light: #828282;
   --global-theme-color: #334155;
-  --navbar-active-item: #EA580C;
   --global-hover-color: #EA580C;
   --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #1C1C1D;
@@ -23,7 +22,8 @@
   --global-card-bg-color: #ffffff;
   --global-card-text-color: #64748B;
   --global-btn-color: #CBD5E1;
-  --social-btn-color: rgba(244, 238, 241, 0.80);
+  --navbar-active-item: #EA580C;
+  --navbar-bg-color: rgba(244, 238, 241, 0.60);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -62,7 +62,6 @@ html[data-theme=dark] {
   --global-text-color: #F1F5F9;
   --global-text-color-light: #e8e8e8;
   --global-theme-color: #CBD5E1;
-  --navbar-active-item: #2698BA;
   --global-hover-color: #2698BA;
   --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #e8e8e8;
@@ -73,7 +72,8 @@ html[data-theme=dark] {
   --global-card-bg-color: #212529;
   --global-card-text-color: #CBD5E1;
   --global-btn-color: #19647a;
-  --social-btn-color: #1C1C1D;
+  --navbar-active-item: #2698BA;
+  --navbar-bg-color: rgba(28, 28, 29, 0.60);
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
@@ -284,7 +284,7 @@ blockquote {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.22);
   box-shadow: 0px 3px 4px 0px rgba(94, 151, 165, 0.1), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
 }
 .card.hoverable:hover figure {
   border-radius: 16px;
@@ -356,15 +356,14 @@ blockquote {
 
 .navbar {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--navbar-bg-color);
   margin: 30px 60px 8px;
   border-radius: 28px;
   text-transform: uppercase;
   font-size: 0.875rem;
   overflow-x: hidden;
+  backdrop-filter: blur(24px);
   max-width: calc(100vw - 120px);
-  backdrop-filter: blur(20px);
 }
 @media (max-width: 768px) {
   .navbar {
@@ -520,10 +519,10 @@ blockquote {
   padding: 8px 10px;
   border: 2px solid var(--global-bg-color);
   border-radius: 28px;
-  background-color: var(--social-btn-color);
+  background-color: var(--navbar-bg-color);
   text-transform: uppercase;
   font-size: 0.875rem;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
 }
 .navbar-left .social-btn a:hover {
   text-decoration: none;

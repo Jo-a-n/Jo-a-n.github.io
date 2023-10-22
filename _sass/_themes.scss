@@ -11,7 +11,6 @@
   --global-text-color: #{$slate-700};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$slate-700};
-  --navbar-active-item: #{$orange-600};
   --global-hover-color: #{$orange-600};
   --global-hover-text-color: #{$orange-600};
   --global-footer-bg-color: #{$grey-color-dark};
@@ -22,8 +21,9 @@
   --global-card-bg-color: #{$white-color};
   --global-card-text-color: #{$slate-500};
   --global-btn-color: #CBD5E1;
-
-  --social-btn-color: rgba(244, 238, 241, 0.80);
+  
+  --navbar-active-item: #{$orange-600};
+  --navbar-bg-color: rgba(244, 238, 241, 0.60);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -66,7 +66,6 @@ html[data-theme='dark'] {
   --global-text-color: #{$slate-100};
   --global-text-color-light: #{$grey-color-light};
   --global-theme-color: #{$slate-300};
-  --navbar-active-item: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$orange-600};
   --global-footer-bg-color: #{$grey-color-light};
@@ -77,8 +76,9 @@ html[data-theme='dark'] {
   --global-card-bg-color: #{$grey-900};
   --global-card-text-color: #{$slate-300};
   --global-btn-color: #{darken($cyan-color, 15%)};
-
-  --social-btn-color: #{$grey-color-dark};
+  
+  --navbar-active-item: #{$cyan-color};
+  --navbar-bg-color: rgba(28, 28, 29, 0.60);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
