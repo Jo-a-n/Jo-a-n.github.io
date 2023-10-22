@@ -118,7 +118,7 @@ body {
 body .bg-image-holder {
   transition: 0.8s;
   content: "";
-  background-image: url("_site/assets/img/bg-480.webp");
+  background-image: url("/assets/img/bg-480.jpg");
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -132,7 +132,7 @@ body .bg-image-holder {
 }
 @media (min-width: 480px) {
   body .bg-image-holder {
-    background-image: url("_site/assets/img/bg-800.webp");
+    background-image: url("/assets/img/bg-800.jpg");
   }
 }
 @media (min-width: 768px) {
