@@ -1,0 +1,20 @@
+<!-- _includes/projects.html -->
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="{{ project.url | relative_url }}">
+    <div class="card hoverable">
+      <p class="card-text card-genre">{{ project.genre }}</p>
+      {%- if project.img %}
+      {%- include figure.html
+        path=project.img
+        alt="project thumbnail" -%}
+      {%- endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        <p class="card-text">{{ project.year }}</p>
+      </div>
+    </div>
+  </a>
+</div>

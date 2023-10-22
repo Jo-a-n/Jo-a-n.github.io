@@ -1,12 +1,12 @@
 ---
 layout: page
 title: NGQUIZ 
-category: HEALTH APP
+genre: HEALTH APP
 description: UI/UX Design, Graphic Design
 year: 2021
 img: /assets/img/cover-ngquiz.jpg
 importance: 3
-category: [work, some of my projects]
+category: [ui/ux, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

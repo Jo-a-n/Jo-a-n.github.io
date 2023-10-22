@@ -1,7 +1,7 @@
 ---
 layout: page
 title: INTERCOMM FOODS
-category: E-SHOP
+genre: E-SHOP
 description: UI/UX Design, Art Direction
 year: TBA
 img: /assets/img/cover-placeholder.png

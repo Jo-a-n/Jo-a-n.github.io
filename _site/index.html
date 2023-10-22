@@ -53,16 +53,23 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!--GSAP Smooth Scroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!--Lenis-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
-
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <div class="bg-image-holder"></div>
     <!-- Header -->
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-md d-md-none fixed-top">
         <div class="container">
           <!-- Social Icons -->
           <div class="navbar-brand social">
@@ -73,7 +80,7 @@
           </div>
           
           <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed ml-auto mt-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -85,7 +92,7 @@
 
               <!-- About -->
               <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">home<span class="sr-only">(current)</span></a>
               </li>
               
               <!-- Blog -->
@@ -100,10 +107,13 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+                <button class="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
@@ -112,55 +122,172 @@
           </div>
         </div>
       </nav>
+      
+            <!-- Scrolling Progress Bar -->
+            <progress id="progress" value="0">
+              <div class="progress-container">
+                <span class="progress-bar"></span>
+              </div>
+            </progress>
 
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
+      <!-- desktop navbar -->
+      <nav class="desktop-nav z-navbar d-none d-md-block w-100 position-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-4 pr-0">
+              <div class="navbar-left">
+                <a href="/">
+                  <svg width="54" height="54" viewbox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" fill="var(--navbar-bg-color)" style="backdrop-filter: blur(24px);"></rect>
+                    <path d="M35.1463 30.6958C34.5804 30.6958 34.2975 30.4129 34.2975 29.847V25.6528C34.2975 25.0537 34.5804 24.7541 35.1463 24.7541H38.8911C39.1574 24.7541 39.3571 24.8373 39.4902 25.0037C39.6234 25.1702 39.69 25.3865 39.69 25.6528V29.847C39.69 30.4129 39.4237 30.6958 38.8911 30.6958H35.1463ZM34.4972 73.7359V35.1896H39.4902V61.2532C39.4902 63.55 39.3737 65.8136 39.1407 68.0438C38.9077 70.3073 38.6081 72.2047 38.242 73.7359H34.4972ZM55.1801 61.9523C53.549 61.9523 52.1676 61.6693 51.0359 61.1035C49.9374 60.5376 49.1052 59.6388 48.5394 58.4072C48.0068 57.1423 47.7405 55.4447 47.7405 53.3143V23.8054H52.7335V52.6652C52.7335 54.0633 52.8667 55.1451 53.133 55.9107C53.4325 56.643 53.832 57.159 54.3313 57.4585C54.8639 57.7581 55.4797 57.9578 56.1787 58.0577L58.6752 58.3573V61.9523H55.1801Z" fill="currentColor"></path>
+                    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" stroke="url(#paint0_linear_221_51535)" stroke-width="3.82609"></rect>
+                    <defs>
+                    <lineargradient id="paint0_linear_221_51535" x1="44" y1="0.25" x2="44" y2="88.25" gradientunits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.2"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                    </lineargradient>
+                    </defs>
+                  </svg>
+                </a>
+                <div class="social-btn">
+                  <a href="https://www.linkedin.com/in/jlioliou" title="LinkedIn" rel="external nofollow noopener" target="_blank">Linked in</a><a href="mailto:%6A%6C%69%6F%6C%69%6F%75@%6F%75%74%6C%6F%6F%6B.%63%6F%6D" title="email">e-mail</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-8">
+              <div class="px-5 m-0 navbar navbar-light">
+                <ul class="navbar-nav">
+                  <!-- About -->
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">home<span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <!-- Blog -->
+                  <!-- <li class="nav-item ">
+                    <a class="nav-link" href="/blog/">blog</a>
+                  </li> -->
+                  <!-- Other pages -->
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/projects/">projects</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/cv/">cv</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/about/">about</a>
+                  </li>
+                  <!-- Toogle theme mode -->
+                  <li class="toggle-container pb-2">
+                    <button class="light-toggle" title="Change theme">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>              
+            </div>
+            
+          </div>
         </div>
-      </progress>
+        
+          <!-- Scrolling Progress Bar -->
+          <progress id="progress" class="position-relative" value="0">
+            <div class="progress-container">
+              <span class="progress-bar"></span>
+            </div>
+          </progress>
+      </nav>
+
     </header>
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container mt-title">
       
         <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-           <span class="font-weight-bold">Ioanna</span>  Lioliou
-          </h1>
-          <p class="desc">UI/UX Designer | MEng in Architecture</p>
+          <h1 class="post-title welcome-text">Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.</h1>
+          <p class="desc"></p>
         </header>
 
         <article>
           
 
           <div class="clearfix">
-            <p class="mt-4" style="font-weight:400;">I believe in the uniqueness of human experience and its right to be respected and expressed. <br><br>People are almost always multitasking, trying to balance thoughts, acts, emotions and interactions. <br>A good tech application for me, is the one that bridges and eases those complexities.<br>
-</p>
-
-<!-- to do -->
-
-<!-- pages/projects.md -->
+            <!-- pages/projects.md -->
 <div class="projects">
-  <!-- Display categorized projects -->
-  <h2 class="category">some of my projects</h2>
+  
   <!-- Generate cards for each project -->
-  <div class="grid">
+  
+  <!-- Display categorized projects on screens < 560px-->
+    <div class="mob-only">
+      <h2 class="category cta">my work_
+        <div class="text-right cta">
+          <a href="/projects" class="btn-io">projects -&gt;</a>
+        </div>
+      </h2>
+      
+    </div>
+    <div class="gallery-wrapper">
+      <!-- Display categorized projects -->
+      <div class="desktop-only">
+        <h2 class="category cta">my work_
+          <div class="text-right cta">
+            <a href="/projects" class="btn-io">see all projects -&gt;</a>
+          </div>
+        </h2>
+        
+      </div>
+      <div class="gallery">
 <!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/Plato's%20Academy-Dipylon/">
-      <div class="card hoverable">
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="/projects/EndofPain/">
+    <div class="card hoverable">
+      <p class="card-text card-genre">INTERACTIVE TOOL</p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-endofpain-480.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-endofpain-800.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-endofpain-1440.webp" type="image/webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <!-- Line 20 - Changed width to 100% (og value=auto) -->
+    <img src="/assets/img/cover-endofpain.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+      <div class="card-body">
+        <h2 class="card-title">ENDOFPAIN</h2>
+        <p class="card-text">UI/UX Design</p>
+        <p class="card-text">2021</p>
+      </div>
+    </div>
+  </a>
+</div>
+<!-- _includes/projects.html -->
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="/projects/Dipylon-Plato's%20Academy/">
+    <div class="card hoverable">
+      <p class="card-text card-genre">INTERACTIVE TOUR APP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-dipylon-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-dipylon-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-dipylon-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-dipylon-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -171,27 +298,28 @@
 
 </figure>
 
-        <div class="card-body py-1">
-          <h2 class="card-title">WALK TO PLATO'S ACADEMY</h2>
-          <p class="card-text text-center">UI/UX Design, Graphic Design, Art Direction</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
+      <div class="card-body">
+        <h2 class="card-title">WALK TO PLATO'S ACADEMY</h2>
+        <p class="card-text">UI/UX Design, Graphic Design, Art Direction</p>
+        <p class="card-text">2023</p>
       </div>
-    </a>
+    </div>
+  </a>
 </div>
 <!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
+
+<!--Cards-->
+<div class="grid-item horizontal">
   <a href="/projects/NGQuiz/">
-      <div class="card hoverable">
+    <div class="card hoverable">
+      <p class="card-text card-genre">HEALTH APP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-ngquiz-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-ngquiz-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-ngquiz-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-ngquiz-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -202,30 +330,140 @@
 
 </figure>
 
-        <div class="card-body py-1">
-          <h2 class="card-title">NGQUIZ</h2>
-          <p class="card-text text-center">UI/UX Design, Graphic Design</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
+      <div class="card-body">
+        <h2 class="card-title">NGQUIZ</h2>
+        <p class="card-text">UI/UX Design, Graphic Design</p>
+        <p class="card-text">2021</p>
       </div>
-    </a>
+    </div>
+  </a>
 </div>
+<!-- _includes/projects.html -->
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="/projects/Dromeas/">
+    <div class="card hoverable">
+      <p class="card-text card-genre">E-SHOP</p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-dromeas-480.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-dromeas-800.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-dromeas-1440.webp" type="image/webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <!-- Line 20 - Changed width to 100% (og value=auto) -->
+    <img src="/assets/img/cover-dromeas.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+      <div class="card-body">
+        <h2 class="card-title">DROMEAS ESHOP</h2>
+        <p class="card-text">UI/UX Design, Graphic Elements</p>
+        <p class="card-text">2022</p>
+      </div>
+    </div>
+  </a>
+</div>
+<!-- _includes/projects.html -->
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="/projects/IAO/">
+    <div class="card hoverable">
+      <p class="card-text card-genre">LANDING PAGE</p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-iao-480.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-iao-800.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-iao-1440.webp" type="image/webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <!-- Line 20 - Changed width to 100% (og value=auto) -->
+    <img src="/assets/img/cover-iao.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+      <div class="card-body">
+        <h2 class="card-title">IAO</h2>
+        <p class="card-text">UI Design</p>
+        <p class="card-text">2021</p>
+      </div>
+    </div>
+  </a>
+</div>
+<!-- _includes/projects.html -->
+
+<!--Cards-->
+<div class="grid-item horizontal">
+  <a href="/projects/Uni-pharma/">
+    <div class="card hoverable">
+      <p class="card-text card-genre">WEB PAGE</p>
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-unipharma-480.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-unipharma-800.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-unipharma-1440.webp" type="image/webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <!-- Line 20 - Changed width to 100% (og value=auto) -->
+    <img src="/assets/img/cover-unipharma.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+      <div class="card-body">
+        <h2 class="card-title">UNI-PHARMA</h2>
+        <p class="card-text">UI Design, Product IA</p>
+        <p class="card-text">2023</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+      </div>
+    </div>
+</div>
+
+<h2 class="category cta">people_
+  <div class="text-right cta">
+    <a href="/cv" class="btn-io">cv -&gt;</a>
+  </div>
+</h2>
+<p><br></p>
+<div class="fl-container fl-right">
+  <div class="txt-right">
+    <p>What I like most about the UX field is that it stands <b><i>in between.</i></b></p>
+    <p>
+    The unique position of UX, acts as a junction point between business, marketing, and development. By collaborating with people in diverse projects from different domains, I learn and explore knowledge, experiences and methodologies beyond the UX field.<br>
+    <b>Sharing different experiences, mindsets and goals through work</b>, is the best part of UX for me.
+    </p>
+    <p>I've collaborated in various company web projects, each adding to my journey in the field.</p>
   </div>
 </div>
 
-<p class="mt-4" style="color:#747373; font-weight:400;">
-I graduated as an Architect from the Polytechnic School of Athens (NTUA). Working as an architect, I explored my interest in interactions and the ways in which different complex user needs, can be facilitated in one environment. The focus on user needs and experiences and the importance of teamwork, have been great attributes later on to my practice as a designer of virtual environments.Currently, I design as part of a web development team.
-</p>
-
-<!-- button to projects -->
-<div class="text-right">
-  <a href="/projects" class="mt-4 btn-io">explore projects -&gt;</a>
+<div class="row mt-4 mx-2 mx-md-0">
+  <img class="col-6 col-md-2" src="/assets/icn/1.svg" alt="UNI-PHARMA logo">
+  <img class="col-6 col-md-2" src="/assets/icn/2.svg" alt="Dipylon logo">
+  <img class="col-6 col-md-2" src="/assets/icn/3.svg" alt="Dromeas Eshop logo">
+  <img class="col-6 col-md-2" src="/assets/icn/4.svg" alt="CGWorks logo">
+  <img class="col-6 col-md-2" src="/assets/icn/5.svg" alt="Intercomm Foods logo">
+  <img class="col-6 col-md-2" src="/assets/icn/6.svg" alt="elite strom logo">
 </div>
-<p><br></p>
-
-<!-- [see all projects ->](/projects){: .btn-io .btn-io:hover } -->
-
 
           </div>
 
@@ -246,10 +484,23 @@ I graduated as an Architect from the Polytechnic School of Athens (NTUA). Workin
       
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2023 Ioanna  Lioliou. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+    <span class="logo-min">  <svg width="88" height="88" viewbox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" fill="var(--navbar-bg-color)" fill-opacity="1"></rect>
+    <path d="M35.1463 30.6958C34.5804 30.6958 34.2975 30.4129 34.2975 29.847V25.6528C34.2975 25.0537 34.5804 24.7541 35.1463 24.7541H38.8911C39.1574 24.7541 39.3571 24.8373 39.4902 25.0037C39.6234 25.1702 39.69 25.3865 39.69 25.6528V29.847C39.69 30.4129 39.4237 30.6958 38.8911 30.6958H35.1463ZM34.4972 73.7359V35.1896H39.4902V61.2532C39.4902 63.55 39.3737 65.8136 39.1407 68.0438C38.9077 70.3073 38.6081 72.2047 38.242 73.7359H34.4972ZM55.1801 61.9523C53.549 61.9523 52.1676 61.6693 51.0359 61.1035C49.9374 60.5376 49.1052 59.6388 48.5394 58.4072C48.0068 57.1423 47.7405 55.4447 47.7405 53.3143V23.8054H52.7335V52.6652C52.7335 54.0633 52.8667 55.1451 53.133 55.9107C53.4325 56.643 53.832 57.159 54.3313 57.4585C54.8639 57.7581 55.4797 57.9578 56.1787 58.0577L58.6752 58.3573V61.9523H55.1801Z" fill="currentColor"></path>
+    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" stroke="url(#paint0_linear)" stroke-width="3.82609"></rect>
+    <defs>
+    <lineargradient id="paint0_linear" x1="44" y1="0.25" x2="44" y2="88.25" gradientunits="userSpaceOnUse">
+    <stop stop-color="white" stop-opacity="0.2"></stop>
+    <stop offset="1" stop-color="white"></stop>
+    <stop offset="1" stop-color="white"></stop>
+    </lineargradient>
+    </defs>
+  </svg></span>
+
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2023 Ioanna  Lioliou. Designed and Developed by <a href="/about" target="_blank">me</a>.
 
       </div>
     </footer>

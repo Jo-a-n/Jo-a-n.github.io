@@ -1,12 +1,12 @@
 ---
 layout: page
 title: UNI-PHARMA
-category: WEB PAGE
+genre: WEB PAGE
 description: UI Design, Product IA
 year: 2023
 img: /assets/img/cover-unipharma.jpg
 importance: 6
-category: [work]
+category: [ui/ux, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -33,7 +33,7 @@ category: [work]
 
 <div class="row mb-3">
     <div class="col-sm">
-        <div class="videoWrapper embed-responsive ">
+        <div class="videoWrapper embed-responsive">
             <video autoplay loop>
                 <source src="/assets/img/unipharma/home.mp4" type='video/mp4'>
             </video>
