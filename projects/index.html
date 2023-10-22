@@ -53,20 +53,40 @@
     <script src="/assets/js/dark_mode.js"></script>
     
 
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!--GSAP Smooth Scroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!--Lenis-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
-
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <div class="bg-image-holder"></div>
     <!-- Header -->
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-md d-md-none fixed-top">
         <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Ioanna </span>Lioliou</a>
+          <a href="/">
+            <svg width="44" height="44" viewbox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" fill="var(--navbar-bg-color)" fill-opacity="0.8"></rect>
+              <path d="M35.1463 30.6958C34.5804 30.6958 34.2975 30.4129 34.2975 29.847V25.6528C34.2975 25.0537 34.5804 24.7541 35.1463 24.7541H38.8911C39.1574 24.7541 39.3571 24.8373 39.4902 25.0037C39.6234 25.1702 39.69 25.3865 39.69 25.6528V29.847C39.69 30.4129 39.4237 30.6958 38.8911 30.6958H35.1463ZM34.4972 73.7359V35.1896H39.4902V61.2532C39.4902 63.55 39.3737 65.8136 39.1407 68.0438C38.9077 70.3073 38.6081 72.2047 38.242 73.7359H34.4972ZM55.1801 61.9523C53.549 61.9523 52.1676 61.6693 51.0359 61.1035C49.9374 60.5376 49.1052 59.6388 48.5394 58.4072C48.0068 57.1423 47.7405 55.4447 47.7405 53.3143V23.8054H52.7335V52.6652C52.7335 54.0633 52.8667 55.1451 53.133 55.9107C53.4325 56.643 53.832 57.159 54.3313 57.4585C54.8639 57.7581 55.4797 57.9578 56.1787 58.0577L58.6752 58.3573V61.9523H55.1801Z" fill="currentColor"></path>
+              <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" stroke="url(#paint0_linear_221_51536)" stroke-width="3.82609"></rect>
+              <defs>
+              <lineargradient id="paint0_linear_221_51536" x1="44" y1="0.25" x2="44" y2="88.25" gradientunits="userSpaceOnUse">
+              <stop stop-color="white" stop-opacity="0.2"></stop>
+              <stop offset="1" stop-color="white"></stop>
+              <stop offset="1" stop-color="white"></stop>
+              </lineargradient>
+              </defs>
+            </svg>
+          </a>
           <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed ml-auto mt-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -78,7 +98,7 @@
 
               <!-- About -->
               <li class="nav-item ">
-                <a class="nav-link" href="/">about</a>
+                <a class="nav-link" href="/">home</a>
               </li>
               
               <!-- Blog -->
@@ -93,10 +113,13 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/about/">about</a>
+              </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+                <button class="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
@@ -105,18 +128,89 @@
           </div>
         </div>
       </nav>
+      
+            <!-- Scrolling Progress Bar -->
+            <progress id="progress" value="0">
+              <div class="progress-container">
+                <span class="progress-bar"></span>
+              </div>
+            </progress>
 
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
+      <!-- desktop navbar -->
+      <nav class="desktop-nav z-navbar d-none d-md-block w-100 position-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-4 pr-0">
+              <div class="navbar-left">
+                <a href="/">
+                  <svg width="54" height="54" viewbox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" fill="var(--navbar-bg-color)" style="backdrop-filter: blur(24px);"></rect>
+                    <path d="M35.1463 30.6958C34.5804 30.6958 34.2975 30.4129 34.2975 29.847V25.6528C34.2975 25.0537 34.5804 24.7541 35.1463 24.7541H38.8911C39.1574 24.7541 39.3571 24.8373 39.4902 25.0037C39.6234 25.1702 39.69 25.3865 39.69 25.6528V29.847C39.69 30.4129 39.4237 30.6958 38.8911 30.6958H35.1463ZM34.4972 73.7359V35.1896H39.4902V61.2532C39.4902 63.55 39.3737 65.8136 39.1407 68.0438C38.9077 70.3073 38.6081 72.2047 38.242 73.7359H34.4972ZM55.1801 61.9523C53.549 61.9523 52.1676 61.6693 51.0359 61.1035C49.9374 60.5376 49.1052 59.6388 48.5394 58.4072C48.0068 57.1423 47.7405 55.4447 47.7405 53.3143V23.8054H52.7335V52.6652C52.7335 54.0633 52.8667 55.1451 53.133 55.9107C53.4325 56.643 53.832 57.159 54.3313 57.4585C54.8639 57.7581 55.4797 57.9578 56.1787 58.0577L58.6752 58.3573V61.9523H55.1801Z" fill="currentColor"></path>
+                    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" stroke="url(#paint0_linear_221_51535)" stroke-width="3.82609"></rect>
+                    <defs>
+                    <lineargradient id="paint0_linear_221_51535" x1="44" y1="0.25" x2="44" y2="88.25" gradientunits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0.2"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                    </lineargradient>
+                    </defs>
+                  </svg>
+                </a>
+                <div class="social-btn">
+                  <a href="https://www.linkedin.com/in/jlioliou" title="LinkedIn" rel="external nofollow noopener" target="_blank">Linked in</a><a href="mailto:%6A%6C%69%6F%6C%69%6F%75@%6F%75%74%6C%6F%6F%6B.%63%6F%6D" title="email">e-mail</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-8">
+              <div class="px-5 m-0 navbar navbar-light">
+                <ul class="navbar-nav">
+                  <!-- About -->
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/">home</a>
+                  </li>
+                  
+                  <!-- Blog -->
+                  <!-- <li class="nav-item ">
+                    <a class="nav-link" href="/blog/">blog</a>
+                  </li> -->
+                  <!-- Other pages -->
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/cv/">cv</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/about/">about</a>
+                  </li>
+                  <!-- Toogle theme mode -->
+                  <li class="toggle-container pb-2">
+                    <button class="light-toggle" title="Change theme">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>              
+            </div>
+            
+          </div>
         </div>
-      </progress>
+        
+          <!-- Scrolling Progress Bar -->
+          <progress id="progress" class="position-relative" value="0">
+            <div class="progress-container">
+              <span class="progress-bar"></span>
+            </div>
+          </progress>
+      </nav>
+
     </header>
 
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container mt-title">
       
         <!-- page.html -->
         <div class="post">
@@ -124,13 +218,18 @@
           <header class="post-header">
             <h1 class="post-title">projects</h1>
             <p class="post-description"></p>
+            <a href="#content"><span class="down-arrow">
+              <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.9957 10.652L15.9997 20.396L6.00366 10.652C5.82507 10.4776 5.58532 10.3799 5.33566 10.3799C5.08601 10.3799 4.84626 10.4776 4.66766 10.652C4.58119 10.7368 4.51249 10.8379 4.46559 10.9495C4.41869 11.0611 4.39453 11.181 4.39453 11.302C4.39453 11.4231 4.41869 11.5429 4.46559 11.6546C4.51249 11.7662 4.58119 11.8673 4.66766 11.952L15.3017 22.32C15.4884 22.5021 15.7389 22.6039 15.9997 22.6039C16.2604 22.6039 16.5109 22.5021 16.6977 22.32L27.3317 11.954C27.4188 11.8692 27.488 11.7679 27.5352 11.6559C27.5825 11.5439 27.6068 11.4236 27.6068 11.302C27.6068 11.1805 27.5825 11.0602 27.5352 10.9482C27.488 10.8362 27.4188 10.7348 27.3317 10.65C27.1531 10.4756 26.9133 10.3779 26.6637 10.3779C26.414 10.3779 26.1743 10.4756 25.9957 10.65V10.652Z" fill="currentColor"></path>
+              </svg>                
+            </span></a>
           </header>
 
-          <article>
+          <article id="content">
             <!-- pages/projects.md -->
 <div class="projects">
   <!-- Display categorized projects -->
-  <h2 class="category">work</h2>
+  <h2 class="category">ui/ux</h2>
   <!-- Generate cards for each project -->
   <div class="grid">
 <!-- _includes/projects.html -->
@@ -138,13 +237,14 @@
 <div class="grid-item">
   <a href="/projects/EndofPain/">
       <div class="card hoverable">
+        <p class="card-text card-genre">INTERACTIVE TOOL</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-endofpain-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-endofpain-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-endofpain-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-endofpain-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -155,11 +255,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">ENDOFPAIN</h2>
-          <p class="card-text text-center">UI/UX Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2021</p>
         </div>
       </div>
     </a>
@@ -167,15 +268,16 @@
 <!-- _includes/projects.html -->
 <div class="grid-sizer"></div>
 <div class="grid-item">
-  <a href="/projects/Plato's%20Academy-Dipylon/">
+  <a href="/projects/Dipylon-Plato's%20Academy/">
       <div class="card hoverable">
+        <p class="card-text card-genre">INTERACTIVE TOUR APP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-dipylon-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-dipylon-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-dipylon-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-dipylon-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -186,11 +288,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">WALK TO PLATO'S ACADEMY</h2>
-          <p class="card-text text-center">UI/UX Design, Graphic Design, Art Direction</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design, Graphic Design, Art Direction</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2023</p>
         </div>
       </div>
     </a>
@@ -200,13 +303,14 @@
 <div class="grid-item">
   <a href="/projects/NGQuiz/">
       <div class="card hoverable">
+        <p class="card-text card-genre">HEALTH APP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-ngquiz-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-ngquiz-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-ngquiz-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-ngquiz-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -217,11 +321,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">NGQUIZ</h2>
-          <p class="card-text text-center">UI/UX Design, Graphic Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design, Graphic Design</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2021</p>
         </div>
       </div>
     </a>
@@ -231,13 +336,14 @@
 <div class="grid-item">
   <a href="/projects/Dromeas/">
       <div class="card hoverable">
+        <p class="card-text card-genre">E-SHOP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-dromeas-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-dromeas-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-dromeas-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-dromeas-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -248,11 +354,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">DROMEAS ESHOP</h2>
-          <p class="card-text text-center">UI/UX Design, Graphic Elements</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design, Graphic Elements</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2022</p>
         </div>
       </div>
     </a>
@@ -262,13 +369,14 @@
 <div class="grid-item">
   <a href="/projects/IAO/">
       <div class="card hoverable">
+        <p class="card-text card-genre">LANDING PAGE</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-iao-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-iao-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-iao-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-iao-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -279,11 +387,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">IAO</h2>
-          <p class="card-text text-center">UI Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI Design</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2021</p>
         </div>
       </div>
     </a>
@@ -293,13 +402,14 @@
 <div class="grid-item">
   <a href="/projects/Uni-pharma/">
       <div class="card hoverable">
+        <p class="card-text card-genre">WEB PAGE</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-unipharma-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-unipharma-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-unipharma-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-unipharma-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -310,11 +420,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">UNI-PHARMA</h2>
-          <p class="card-text text-center">UI Design, Product IA</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI Design, Product IA</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2023</p>
         </div>
       </div>
     </a>
@@ -324,13 +435,14 @@
 <div class="grid-item">
   <a href="/projects/Zonalight/">
       <div class="card hoverable">
+        <p class="card-text card-genre">E-SHOP</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-zonalight-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-zonalight-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-zonalight-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-zonalight-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -341,11 +453,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">ZONALIGHT</h2>
-          <p class="card-text text-center">E-Commerce Website</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">E-Commerce Website</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2021</p>
         </div>
       </div>
     </a>
@@ -355,13 +468,14 @@
 <div class="grid-item">
   <a href="/projects/Ajuna/">
       <div class="card hoverable">
+        <p class="card-text card-genre">PRESENTATION WEBSITE</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-ajuna-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-ajuna-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-ajuna-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-ajuna-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -372,11 +486,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">AJUNA</h2>
-          <p class="card-text text-center">UI Design, Graphic Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI Design, Graphic Design</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">2021</p>
         </div>
       </div>
     </a>
@@ -386,13 +501,14 @@
 <div class="grid-item">
   <a href="/projects/ISAAS/">
       <div class="card hoverable">
+        <p class="card-text card-genre">INFRASTRUCTURE MANAGEMENT SAAS</p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-isaas-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-isaas-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-isaas-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-isaas-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -403,11 +519,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">ISAAS</h2>
-          <p class="card-text text-center">UI/UX Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text">TBA</p>
         </div>
       </div>
     </a>
@@ -417,13 +534,14 @@
 <div class="grid-item">
   <a href="/projects/Sudokku/">
       <div class="card hoverable">
+        <p class="card-text card-genre"></p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-sudokku-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-sudokku-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-sudokku-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-sudokku-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -434,42 +552,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">SUDOKKU</h2>
-          <p class="card-text text-center">UI/UX Design</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">UI/UX Design</p>
+          <div class="row  p-0">
           </div>
-        </div>
-      </div>
-    </a>
-</div>
-<!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="/projects/CGWorks%202022-2023/">
-      <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-cgworks-480.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-cgworks-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-cgworks-1400.webp" type="image/webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <!-- Line 20 - Changed width to 100% (og value=auto) -->
-    <img src="/assets/img/cover-cgworks.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-        <div class="card-body py-1">
-          <h2 class="card-title">CGWorks 2022-2023</h2>
-          <p class="card-text text-center">Projects TBA</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
+          <p class="card-text">TBA</p>
         </div>
       </div>
     </a>
@@ -483,13 +571,14 @@
 <div class="grid-item">
   <a href="/projects/CaseStudy-Ntina/">
       <div class="card hoverable">
+        <p class="card-text card-genre"></p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-ntina-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-ntina-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-ntina-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-ntina-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -500,11 +589,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">KN - Case Study</h2>
-          <p class="card-text text-center">Mobile-ordering Chatbot App</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">Mobile-ordering Chatbot App</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text"></p>
         </div>
       </div>
     </a>
@@ -514,13 +604,14 @@
 <div class="grid-item">
   <a href="/projects/CaseStudy-Sarliz/">
       <div class="card hoverable">
+        <p class="card-text card-genre"></p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-sarliz-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-sarliz-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-sarliz-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-sarliz-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -531,11 +622,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">ΣΑΡΛΙΖ - Case Study</h2>
-          <p class="card-text text-center">Cinema Responsive Website</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">Cinema Responsive Website</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text"></p>
         </div>
       </div>
     </a>
@@ -545,13 +637,14 @@
 <div class="grid-item">
   <a href="/projects/Hackathon%20ThessDW/">
       <div class="card hoverable">
+        <p class="card-text card-genre"></p>
 <figure>
 
   <picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cover-eco-thes-480.webp" type="image/webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cover-eco-thes-800.webp" type="image/webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cover-eco-thes-1400.webp" type="image/webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1440px)" srcset="/assets/img/cover-eco-thes-1440.webp" type="image/webp"></source>
     
 
     <!-- Fallback to the original file -->
@@ -562,11 +655,12 @@
 
 </figure>
 
-        <div class="card-body py-1">
+        <div class="card-body">
           <h2 class="card-title">Hackathon - ThessDW 2023</h2>
-          <p class="card-text text-center">Infrastructure App for citizens of Thessaloniki</p>
-          <div class="row ml-1 mr-1 p-0">
+          <p class="card-text">Infrastructure App for citizens of Thessaloniki</p>
+          <div class="row  p-0">
           </div>
+          <p class="card-text"></p>
         </div>
       </div>
     </a>
@@ -581,10 +675,23 @@
       
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2023 Ioanna  Lioliou. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+    <span class="logo-min">  <svg width="88" height="88" viewbox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" fill="var(--navbar-bg-color)" fill-opacity="1"></rect>
+    <path d="M35.1463 30.6958C34.5804 30.6958 34.2975 30.4129 34.2975 29.847V25.6528C34.2975 25.0537 34.5804 24.7541 35.1463 24.7541H38.8911C39.1574 24.7541 39.3571 24.8373 39.4902 25.0037C39.6234 25.1702 39.69 25.3865 39.69 25.6528V29.847C39.69 30.4129 39.4237 30.6958 38.8911 30.6958H35.1463ZM34.4972 73.7359V35.1896H39.4902V61.2532C39.4902 63.55 39.3737 65.8136 39.1407 68.0438C38.9077 70.3073 38.6081 72.2047 38.242 73.7359H34.4972ZM55.1801 61.9523C53.549 61.9523 52.1676 61.6693 51.0359 61.1035C49.9374 60.5376 49.1052 59.6388 48.5394 58.4072C48.0068 57.1423 47.7405 55.4447 47.7405 53.3143V23.8054H52.7335V52.6652C52.7335 54.0633 52.8667 55.1451 53.133 55.9107C53.4325 56.643 53.832 57.159 54.3313 57.4585C54.8639 57.7581 55.4797 57.9578 56.1787 58.0577L58.6752 58.3573V61.9523H55.1801Z" fill="currentColor"></path>
+    <rect x="1.91304" y="2.16304" width="84.1739" height="84.1739" rx="42.087" stroke="url(#paint0_linear)" stroke-width="3.82609"></rect>
+    <defs>
+    <lineargradient id="paint0_linear" x1="44" y1="0.25" x2="44" y2="88.25" gradientunits="userSpaceOnUse">
+    <stop stop-color="white" stop-opacity="0.2"></stop>
+    <stop offset="1" stop-color="white"></stop>
+    <stop offset="1" stop-color="white"></stop>
+    </lineargradient>
+    </defs>
+  </svg></span>
+
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2023 Ioanna  Lioliou. Designed and Developed by <a href="/about" target="_blank">me</a>.
 
       </div>
     </footer>
