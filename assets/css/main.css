@@ -130,6 +130,16 @@ body .bg-image-holder {
   filter: var(--bg-filter);
   z-index: -1;
 }
+@media (max-width: 800px) {
+  body .bg-image-holder {
+    background-image: url("_site/assets/img/bg-800.webp");
+  }
+}
+@media (max-width: 480px) {
+  body .bg-image-holder {
+    background-image: url("_site/assets/img/bg-480.webp");
+  }
+}
 body h1, body h2, body h3, body h4, body h5, body h6 {
   scroll-margin-top: 66px;
 }
