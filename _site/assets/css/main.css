@@ -1215,9 +1215,8 @@ nav[data-toggle=toc] .nav-link.active:hover {
 }
 
 .logo-min {
-  background: url("/assets/icn/logo-min.svg");
-  height: 89px;
-  width: 89px;
+  height: 88px;
+  width: 88px;
   scale: 0.8;
   padding: 2px;
   display: block;
