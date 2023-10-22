@@ -13,6 +13,12 @@ body {
     transition: .8s;
     content: "";
     background-image: url('/assets/img/bg.jpg');
+    @media (max-width: 800px) {
+      background-image: url('_site/assets/img/bg-800.webp');
+    }
+    @media (max-width: 480px) {
+      background-image: url('_site/assets/img/bg-480.webp');
+    }
     background-position: center;
     background-size: cover;
     position: fixed;
