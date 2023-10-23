@@ -23,7 +23,7 @@
   --global-btn-color: #CBD5E1;
   
   --navbar-active-item: #{$orange-600};
-  --navbar-bg-color: rgba(244, 238, 241, 0.60);
+  --navbar-bg-color: rgba(244, 238, 241, 0.75);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -78,7 +78,7 @@ html[data-theme='dark'] {
   --global-btn-color: #{darken($cyan-color, 15%)};
   
   --navbar-active-item: #{$cyan-color};
-  --navbar-bg-color: rgba(28, 28, 29, 0.60);
+  --navbar-bg-color: rgba(28, 28, 29, 0.75);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
