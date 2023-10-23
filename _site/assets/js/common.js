@@ -61,7 +61,7 @@ let mm = gsap.matchMedia();
 mm.add("(min-width: 560px)", () => {
     ScrollTrigger.create({
         trigger: ".gallery-wrapper",
-        start: "top 220px",
+        start: "top 150px",
         pin: true,
         onUpdate: (self) => {
             // console.log(
