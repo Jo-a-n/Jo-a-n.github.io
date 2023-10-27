@@ -295,6 +295,7 @@ blockquote {
   background: rgba(255, 255, 255, 0.22);
   box-shadow: 0px 3px 4px 0px rgba(94, 151, 165, 0.1), 0px 3px 2px 0px rgba(255, 255, 255, 0.25) inset, 0px 0px 12px 0px rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 .card.hoverable:hover figure {
   border-radius: 16px;
@@ -373,6 +374,7 @@ blockquote {
   font-size: 0.875rem;
   overflow-x: hidden;
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   max-width: calc(100vw - 120px);
 }
 @media (max-width: 768px) {
@@ -533,6 +535,7 @@ blockquote {
   text-transform: uppercase;
   font-size: 0.875rem;
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 .navbar-left .social-btn a:hover {
   text-decoration: none;
@@ -1332,7 +1335,7 @@ html {
 }
 
 #content {
-  scroll-margin: 1.5rem;
+  scroll-margin: 7rem;
 }
 
 /*******************************************************************************
