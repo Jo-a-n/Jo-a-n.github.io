@@ -5,8 +5,7 @@ layout: default
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}</h1> 
-            <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}
+            <h1 class="post-title">{{ page.title }}</h1> 
             <p class="post-description">{{ page.description }}</p>
             <a href="#content" ><span class='down-arrow'>
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,8 +13,9 @@ layout: default
               </svg>
             </span></a>
           </header>
-
+          
           <article>
+            <div class="mt-2 d-flex justify-content-end">{% if page.cv_pdf %}<a class="btn-io" style="font-size:1rem; padding:12px 16px;" href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer"><i style="padding-right:8px;" class="fas fa-file-pdf"></i>resume pdf </a>{% endif %}</div>
             <div class="cv" id="content">
               {% for entry in site.data.cv %}
                 <div class="card mt-3 p-3">
