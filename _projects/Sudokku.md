@@ -5,8 +5,8 @@ genre: DEPLOYMENT PAAS
 description: UI/UX Design
 year: TBA -Under Development
 img: /assets/img/cover-sudokku.jpg
-importance: 11
-category: [web apps_]
+importance: 3
+category: [web apps_, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

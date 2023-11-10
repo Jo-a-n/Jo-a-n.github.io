@@ -5,7 +5,7 @@ genre: INTERACTIVE TOOL
 description: UI/UX Design
 year: 2021
 img: /assets/img/cover-endofpain.jpg
-importance: 1
+importance: 2
 category: [web apps_, my work_]
 ---
 

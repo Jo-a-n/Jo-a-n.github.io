@@ -5,7 +5,7 @@ genre: INTERACTIVE TOUR APP
 description: UI/UX Design, Graphic Design, Art Direction
 year: 2023
 img: /assets/img/cover-dipylon.jpg
-importance: 2
+importance: 1
 category: [my work_, web apps_]
 ---
 
