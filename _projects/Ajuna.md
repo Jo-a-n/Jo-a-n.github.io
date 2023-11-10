@@ -5,8 +5,8 @@ genre: PRESENTATION WEBSITE
 description: UI Design, Graphic Design 
 year: 2021
 img: /assets/img/cover-ajuna.jpg
-importance: 8
-category: [ui/ux]
+importance: 6
+category: [webpages & ecommerce_, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

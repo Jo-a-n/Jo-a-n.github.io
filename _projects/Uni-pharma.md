@@ -6,7 +6,7 @@ description: UI Design, Product IA
 year: 2023
 img: /assets/img/cover-unipharma.jpg
 importance: 6
-category: [ui/ux, my work_]
+category: [webpages & ecommerce_, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

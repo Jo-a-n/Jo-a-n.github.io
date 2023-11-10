@@ -5,8 +5,8 @@ genre: HEALTH APP
 description: UI/UX Design, Graphic Design
 year: 2021
 img: /assets/img/cover-ngquiz.jpg
-importance: 3
-category: [ui/ux, my work_]
+importance: 7
+category: [web apps_, my work_]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

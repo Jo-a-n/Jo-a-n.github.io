@@ -4,7 +4,7 @@ title: ΣΑΡΛΙΖ - Case Study
 description: Cinema Responsive Website
 img: /assets/img/cover-sarliz.jpg
 importance: 1
-category: [case studies]
+category: [case studies_]
 ---
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>
