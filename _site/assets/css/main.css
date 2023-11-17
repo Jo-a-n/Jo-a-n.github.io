@@ -9,9 +9,9 @@
   --global-bg-color: #F4EEF1;
   --scroll-bg-color: #F4EEF1;
   --global-code-bg-color: rgba(28, 73, 117, 0.05);
-  --global-text-color: #334155;
+  --global-text-color: #1E293B;
   --global-text-color-light: #828282;
-  --global-theme-color: #334155;
+  --global-theme-color: #1E293B;
   --global-hover-color: #EA580C;
   --global-hover-text-color: #EA580C;
   --global-footer-bg-color: #1C1C1D;
@@ -20,7 +20,7 @@
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #ffffff;
-  --global-card-text-color: #64748B;
+  --global-card-text-color: #334155;
   --global-btn-color: #CBD5E1;
   --navbar-active-item: #EA580C;
   --navbar-bg-color: rgba(244, 238, 241, 0.75);
