@@ -4,7 +4,7 @@ title: DROMEAS ESHOP
 genre: E-SHOP
 description: UI/UX Design, Graphic Elements
 img: /assets/img/cover-dromeas.jpg
-year: 2022
+year: 2023
 importance: 7
 category: [webpages & ecommerce_]
 ---

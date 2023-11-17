@@ -3,7 +3,7 @@ layout: page
 title: ENDOFPAIN
 genre: INTERACTIVE TOOL
 description: UI/UX Design
-year: 2021
+year: 2022
 img: /assets/img/cover-endofpain.jpg
 importance: 2
 category: [web apps_, my work_]
@@ -13,7 +13,7 @@ category: [web apps_, my work_]
     <p>
     Scope of work: UI/UX Design<br>
     Agency: CGWORKS<br>
-    Published: 2023<br>
+    Published: 2022<br>
     <a href="https://www.endofpain.gr/el/">Visit Web App ↗</a>
     </p>
  </div>

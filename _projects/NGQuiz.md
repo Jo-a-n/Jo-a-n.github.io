@@ -12,7 +12,7 @@ category: [web apps_]
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>
     Scope of work: UI/UX Design, Graphic Design<br>
-    Published: 2022<br>
+    Published: 2021<br>
     <a href="https://myngs.gr/papachristos/">Visit the Web App ↗</a>
     </p>
  </div>

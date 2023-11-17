@@ -12,7 +12,7 @@ category: [webpages & ecommerce_, my work_]
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
     <p>
     Scope of work: UI/UX Design<br>
-    Published: 2023<br>
+    Published: 2021<br>
     <a href="https://www.iaotech.space">Visit the Website ↗</a>
     </p>
  </div>

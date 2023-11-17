@@ -3,7 +3,7 @@ layout: page
 title: AJUNA
 genre: PRESENTATION WEBSITE 
 description: UI Design, Graphic Design 
-year: 2021
+year: 2022
 img: /assets/img/cover-ajuna.jpg
 importance: 6
 category: [webpages & ecommerce_, my work_]
@@ -13,7 +13,7 @@ category: [webpages & ecommerce_, my work_]
     <p>
     Scope of work: UI Design, Graphic Design<br>
     Agency / Project Management: CGWORKS<br>
-    Published: 2021<br>
+    Published: 2022<br>
     </p>
  </div>
 
