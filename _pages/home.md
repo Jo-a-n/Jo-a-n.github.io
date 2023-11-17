@@ -81,7 +81,7 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 </div>
 
 
-<h2 class="category cta">{{ "people_" }}
+<h2 class="category cta">{{ "experience_" }}
   <div class="text-right cta">
     <a href="/cv" class="btn-io">cv -></a>
   </div>
