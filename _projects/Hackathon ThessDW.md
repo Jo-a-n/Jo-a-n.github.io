@@ -184,6 +184,11 @@ category: [case studies_]
 </div>
 
 <div class="text-center">
+ <div class="row">
+        <div class="col-sm mt-4">
+            {% include figure.html path="assets/img/eco-thes/eco-thes1.png" title="eco-thess mobile app case study" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm mt-4">
             {% include figure.html path="assets/img/eco-thes/eco-thes2.png" title="eco-thess mobile app case study" class="img-fluid rounded z-depth-1" %}
@@ -257,6 +262,11 @@ category: [case studies_]
     <div class="row">
         <div class="col-sm">
             {% include figure.html path="assets/img/eco-thes/eco-thes17.png" title="eco-thess mobile app case study" class="img-fluid rounded z-depth-1" %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.html path="assets/img/eco-thes/eco-thes17a.png" title="eco-thess mobile app case study" class="img-fluid rounded z-depth-1" %}
         </div>
     </div>
 </div>
