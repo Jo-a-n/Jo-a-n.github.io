@@ -33,4 +33,3 @@ category: []
         <p><em>(lol, this copy text was an AI suggestion for here, enjoy)</em></p>
     </div>    
 </div>
-
