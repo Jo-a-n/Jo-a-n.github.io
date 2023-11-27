@@ -40,7 +40,7 @@ category: [case studies_]
     <div class="col-lg-8">
         <p><b>"Εco-thess"</b> is a <b>mobile application</b> for <b>locating and accessing public compost bins</b>, aiming to limit food waste, by making the collection and recycling of organic waste a <b>habit</b> for the citizens of Thessaloniki.<br><br>
         This is a Case Study designed as part of the Thessaloniki Design Week in a 48hrs Hackathon, organized by fromScratch Studio. <br><br>
-        For this app every team member wore multiple hats, conducting simplified and condensed parts of the <b>UX research</b>, <b>design</b> and <b>presentation</b> of the project. The final result showcased <b>solutions</b> for all the main identified <b>user pain points</b>, that were highlighted in the research phase. The final design was <b>presented</b> by the team on the final day of the Hackathon.</p>
+         For this app every team member wore multiple hats, conducting simplified and condensed parts of the <b>UX research</b>, <b>design</b> and <b>presentation</b> of the project. The final result showcased <b>solutions</b> for all the main identified <b>user pain points</b>, that were highlighted in the research phase. The final design was <b>presented</b> by the team on the final day of the Hackathon.</p>
     </div>    
 </div>
 
@@ -145,6 +145,15 @@ category: [case studies_]
 </div>
 <div class="caption">
     A Reward System focused on establishing a habit.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-4">
+        {% include figure.html path="assets/img/eco-thes/eco-thes21.jpg" title="Sketches of the user flow" class="img-fluid rounded-xl z-depth-0" %}
+    </div>
+</div>
+<div class="caption">
+    Sketches from the user testing phase.
 </div>
 
 <div class="row justify-content-center">
