@@ -4,5 +4,5 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 3
-cv_pdf: Resume-CV.pdf
+cv_pdf: Ioanna Lioliou-Resume.pdf
 ---

@@ -23,28 +23,46 @@
 - title: Experience
   type: time_table
   contents:
-    - title: UI/UX Designer
+    - title: UI / UX Designer
       institution: Freelance, Remote
-      year: Aug 2021 - Present
+      year: Sep 2022 - Present
       description: 
         - Works with clients and collaborates with team to define and design product interfaces, as part of a web development team.
         - Defines goals and outcomes. Conducts competitive audits and uses user research tools to structure effective information architecture.
         - Creates user flows, wireframes and mockups for websites and web apps in the sectors of Design, Health and other. 
         - Proposes and iterates product designs, aiming to accommodate business needs and strengthen business brand, through a frictionless user experience.
-                
-    - title: UI/UX Designer
+
+    - title: HTML & CSS
+      institution: <em> (education & learning) </em>
+      year: May 2023 - Oct 2023
+      description: 
+        Learned and applied front end development principles. Designed and developed personal portfolio website.                
+    - title: UI / UX Designer
       institution: CGWORKS, Athens
       year: Jan 2022 - Jun 2023
-      description:
+      description: 
         - Collaborated on diverse website projects, including business websites, interactive e-commerce web apps and interactive tours.
         - Conducted competitive audits and basic user research to inform design decisions and enhance user experiences.
         - Structured information architecture (IA), followed accessibility standards and UX best practices in the design.
         - Presented project progress to clients and gathered requirements and feedback to accomodate in design iterations. 
         - Coordinated team communication and project phases, ensuring the necessary iterations for effective and timely deliveries.
-                
+
+    - title: UI Designer
+      institution: Freelance, Remote
+      year: Apr 2021 - Jan 2022
+      description: 
+        - Provided UI design services to clients in collaboration with a developer.
+        - Gathered requirements and brand goals from stakeholders. Provided information architecture,wireframes, prototypes, mockups and graphic elements.
+
+    - title: Google UX Design Professional Certificate
+      institution: <em> (education & learning) </em>
+      year: May 2021 - Dec 2021
+      description: 
+        Earned UX Design Certificate by completing 152 hours of courses and three case studies. tudied the design process, research and foundational UX concepts. Conducted user research and user testing interviews.
+              
     - title: Architect
       institution: ao7 architects
-      year: sep 2018 - mar 2020
+      year: Sep 2018 - Mar 2020
       description: 
         - Analyzed briefs and requirements, visualized concept designs and construction blueprints, practicing design principles.     
         - Understood the value of user experience. Realized the importance of design in communicating concepts and meaning.
