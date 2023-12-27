@@ -122,6 +122,7 @@ body .bg-image-holder {
   background-position: center;
   background-size: cover;
   position: fixed;
+  background-position: top;
   top: 0;
   left: 0;
   width: 100%;
