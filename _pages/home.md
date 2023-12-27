@@ -3,7 +3,7 @@ layout: home
 title: home
 permalink: /
 # subtitle: Welcome to my portfolio!
-display_categories: [my work_]
+display_categories: [my work]
 social: false  # includes social icons at the bottom of the page
 welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
@@ -81,7 +81,7 @@ welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 </div>
 
 
-<h2 class="category cta">{{ "experience_" }}
+<h2 class="category cta">{{ "experience" }}
   <div class="text-right cta">
     <a href="/cv" class="btn-io">cv -></a>
   </div>

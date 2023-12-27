@@ -1,12 +1,12 @@
 ---
 layout: page
 title: IAO
-genre: LANDING PAGE
+genre: WEBSITE
 description: UI Design
 year: 2021
 img: /assets/img/cover-iao.jpg
-importance: 5
-category: [webpages & ecommerce_, my work_]
+importance: 3
+category: [business & ecommerce, my work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

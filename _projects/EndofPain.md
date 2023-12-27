@@ -1,12 +1,12 @@
 ---
 layout: page
 title: ENDOFPAIN
-genre: INTERACTIVE TOOL
+genre: HEALTH APP
 description: UI/UX Design
 year: 2022
 img: /assets/img/cover-endofpain.jpg
-importance: 2
-category: [web apps_, my work_]
+importance: 5
+category: [apps & platforms, my work]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

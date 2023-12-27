@@ -1,12 +1,12 @@
 ---
 layout: page
 title: ISAAS
-genre: INFRASTRUCTURE MANAGEMENT SAAS
+genre: INFRASTRUCTURE SAAS
 description: UI/UX Design
 year: TBA
 img: /assets/img/cover-isaas.jpg
 importance: 9
-category: [web apps_]
+category: [apps & platforms]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
@@ -27,10 +27,11 @@ category: [web apps_]
 
 <div class="row my-3 text-md-center justify-content-center">
     <div class="col-lg-8">
+        <p><b>This project is under development, so here is an overview of what it's about:</b></p> <br>
         <p>ISaaS is an Asset and Infrastucture Management tool for highways in Greece. Through the platform the asssigned construction company can <b>coordinate the project and manage the timelines and restrictions of all involved resources</b>. As an Infrastructure Management Saas the platform can be used to track and manage any maintenance tasks needed for the highway, as well as any ongoing repair tasks.</p>
         <p>I worked along the lead UX designer of the project (Theodoros Theodoridis) delivering the <b>UI design</b> and graphic elements of the project, as well as the UX design of specific platform sections.</p>
-        <p>This project is under development and protected by an NDA so here is an overview in figma of the multitude of the screens surrounding the user flow! ;)</p>
-    </div>    
+        <p>For now, here is an overview in figma of the multitude of the screens surrounding the user flow! ;)</p>
+        </div>    
 </div>
 
 <div class="row">

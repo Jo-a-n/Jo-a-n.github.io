@@ -5,7 +5,7 @@ permalink: /projects/
 # description: Past projects, case studies and other stuff I've done.
 nav: true
 nav_order: 2
-display_categories: [web apps_, webpages & ecommerce_, case studies_]
+display_categories: [business & ecommerce, apps & platforms, case studies]
 horizontal: false
 ---
 

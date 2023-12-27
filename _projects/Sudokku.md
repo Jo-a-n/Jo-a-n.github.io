@@ -1,12 +1,12 @@
 ---
 layout: page
 title: SUDOKKU
-genre: DEPLOYMENT PAAS
+genre: PAAS
 description: UI/UX Design
 year: TBA -Under Development
 img: /assets/img/cover-sudokku.jpg
-importance: 3
-category: [web apps_, my work_, case studies_]
+importance: 1
+category: [apps & platforms, my work, case studies]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">
