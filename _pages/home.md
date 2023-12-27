@@ -2,10 +2,11 @@
 layout: home
 title: home
 permalink: /
+welcome: Ioanna Lioliou</b> 
+status: UI | UX Designer
 # subtitle: Welcome to my portfolio!
 display_categories: [my work]
 social: false  # includes social icons at the bottom of the page
-welcome: Hi there, I’m Ioanna! <br><s>an architect</s> <br>a UI/UX Designer.
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 # profile:

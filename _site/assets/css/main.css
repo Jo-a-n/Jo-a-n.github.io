@@ -736,6 +736,7 @@ footer.sticky-bottom {
 
 h2.category {
   color: var(--global-text-color);
+  opacity: 0.9;
   padding-top: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
