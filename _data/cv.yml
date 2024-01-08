@@ -20,66 +20,55 @@
       institution: Universitat Politècnica de Catalunya , Barcelona, Spain
       year: 2017
 
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
     - title: UI / UX Designer
-      institution: Freelance, Remote
-      year: Sep 2022 - Present
+      institution: Individual Contractor | Tashows, CGWorks
+      year: Jul 2023 - Present
+      overview: Provide product design services to clients. Gather requirements and set brand goals with clients. Conduct user and competitor research & analysis. Provide information architecture, diagram user flows, wireframes, prototypes, mockups, graphic elements and art direction. Present insights to clients.
       description: 
-        - Works with clients and collaborates with team to define and design product interfaces, as part of a web development team.
-        - Defines goals and outcomes. Conducts competitive audits and uses user research tools to structure effective information architecture.
-        - Creates user flows, wireframes and mockups for websites and web apps in the sectors of Design, Health and other. 
-        - Proposes and iterates product designs, aiming to accommodate business needs and strengthen business brand, through a frictionless user experience.
-
-    - title: HTML & CSS
-      institution: <em> (education & learning) </em>
-      year: May 2023 - Oct 2023
-      description: 
-        Learned and applied front end development principles. Designed and developed personal portfolio website.                
+        - Decreased design-to-production time by 50%, implementing design systems and component libraries. (Tailwind CSS, Bootstrap)
+        - Decreased client redesign requests, by proactively and timely communicating goals and decisions.
+ 
     - title: UI / UX Designer
-      institution: CGWORKS, Athens
+      institution: CGWORKS |
       year: Jan 2022 - Jun 2023
+      overview: Lead designer for the UX & UI of apps and websites. Conducted competitor and user analysis. Provided visual language and information architecture structure. Created wireframes, mockups, prototypes. Presented insights to clients and stakeholders in key design phases.
       description: 
-        - Collaborated on diverse website projects, including business websites, interactive e-commerce web apps and interactive tours.
-        - Conducted competitive audits and basic user research to inform design decisions and enhance user experiences.
-        - Structured information architecture (IA), followed accessibility standards and UX best practices in the design.
-        - Presented project progress to clients and gathered requirements and feedback to accomodate in design iterations. 
-        - Coordinated team communication and project phases, ensuring the necessary iterations for effective and timely deliveries.
+        - Undertook 7 projects from kick-off through delivery, coordinating and aligning design & development. Provided art direction for 3 projects.
+        - Established design-to-development best practices and delivered style guides.
+        - Created an in-house multi-brand design system, based on tokenization.
 
     - title: UI Designer
-      institution: Freelance, Remote
-      year: Apr 2021 - Jan 2022
+      institution: Tashows |
+      year: Apr 2021 - Dec 2022
+      overview: Provided UI design services, collaborating with a developer. Gathered requirements and brand goals from stakeholders. Provided information architecture, wireframes, prototypes, mockups and graphic elements.
       description: 
-        - Provided UI design services to clients in collaboration with a developer.
-        - Gathered requirements and brand goals from stakeholders. Provided information architecture,wireframes, prototypes, mockups and graphic elements.
-
-    - title: Google UX Design Professional Certificate
-      institution: <em> (education & learning) </em>
-      year: May 2021 - Dec 2021
-      description: 
-        Earned UX Design Certificate by completing 152 hours of courses and three case studies. tudied the design process, research and foundational UX concepts. Conducted user research and user testing interviews.
-              
+        - Delivered 3 projects with design style guidelines.
+             
     - title: Architect
-      institution: ao7 architects
+      institution: ao7 architects |
       year: Sep 2018 - Mar 2020
       description: 
         - Analyzed briefs and requirements, visualized concept designs and construction blueprints, practicing design principles.     
         - Understood the value of user experience. Realized the importance of design in communicating concepts and meaning.
 
-- title: Licenses & Certifications 
+
+- title: Courses & Certifications 
   type: time_table
   contents:
-    - title: Google UX Design Specialization 
+    - title: HTML, CSS & Javascript
+      overview:
+        Learned and applied basic front-end development. Designed and developed this personal portfolio website, jlioliou.com.
+    - title: Digital Marketing and Online Branding 
+      institution: TUV Hellas (TUV Nord)
+      overview:
+        Earned Digital Marketing and Online Branding Certificate by completing 110 hours of online courses and passing final certification test. Basics of digital marketing to build business web presence, plan online strategy, optimise SEO & SEM and utilize analytics. 
+    - title: Google UX Design Professional Certificate
       institution: Coursera 
-      year: Dec 2021
-      description:
-        Seven Courses emphasizing on tools to empathize with users, define pain points, and the basics of UX research. 
-        Ideated solutions, created wireframes and prototypes and conducted user testings, to get and implement feedback.
-    - title:  Foundamentals of Digital Marketing 
-      institution: Google
-      year: Apr 2021             
-      description: Basics of digital marketing to build business web presence, plan online strategy, optimise SEO & SEM and utilize analytics. Targeted marketing, social media, content and e-mail marketing.
+      overview:
+        Earned UX Design Certificate by completing 152 hours of courses and three case studies. Studied UX research, UI design, and foundational UX concepts. Conducted user research and user testing interviews.
 
 # - title: Open Source Projects
 #   type: time_table
