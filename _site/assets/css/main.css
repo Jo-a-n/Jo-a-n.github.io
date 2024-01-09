@@ -746,7 +746,7 @@ h2.category {
   margin-bottom: 1.75rem;
   font-weight: 400 !important;
 }
-@media (max-width: 560px) {
+@media (max-width: 576px) {
   h2.category {
     padding-left: 12px;
     font-size: 2rem;
