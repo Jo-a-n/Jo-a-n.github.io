@@ -8,25 +8,13 @@
     - name: Languages
       value: Greek - native, English - fluent, Spanish - basic proficiency
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Architecture Engineering
-      institution: National Technical University of Athens, Athens, Greece
-      year: 2020
-      description:
-        - Grade 8.05
-    - title:  Student Exchange Program - Erasmus
-      institution: Universitat Politècnica de Catalunya , Barcelona, Spain
-      year: 2017
-
 - title: Work Experience
   type: time_table
   contents:
     - title: UI / UX Designer
-      institution: Individual Contractor | Tashows, CGWorks
+      institution: Individual Contractor | Tashows, CGWorks 
       year: Jul 2023 - Present
-      overview: Provide product design services to clients. Gather requirements and set brand goals with clients. Conduct user and competitor research & analysis. Provide information architecture, diagram user flows, wireframes, prototypes, mockups, graphic elements and art direction. Present insights to clients.
+      overview: Provide product design services. Gather requirements and set brand goals with clients. Conduct user and competitor research & analysis. Provide information architecture, diagram user flows, wireframes, prototypes, mockups, graphic elements and art direction. Present insights to clients.
       description: 
         - Decreased design-to-production time by 50%, implementing design systems and component libraries. (Tailwind CSS, Bootstrap)
         - Decreased client redesign requests, by proactively and timely communicating goals and decisions.
@@ -54,21 +42,31 @@
         - Analyzed briefs and requirements, visualized concept designs and construction blueprints, practicing design principles.     
         - Understood the value of user experience. Realized the importance of design in communicating concepts and meaning.
 
-
-- title: Courses & Certifications 
+- title: Certifications & Education  
   type: time_table
   contents:
     - title: HTML, CSS & Javascript
+      year: 2023
       overview:
         Learned and applied basic front-end development. Designed and developed this personal portfolio website, jlioliou.com.
     - title: Digital Marketing and Online Branding 
       institution: TUV Hellas (TUV Nord)
+      year: 2023
       overview:
         Earned Digital Marketing and Online Branding Certificate by completing 110 hours of online courses and passing final certification test. Basics of digital marketing to build business web presence, plan online strategy, optimise SEO & SEM and utilize analytics. 
     - title: Google UX Design Professional Certificate
       institution: Coursera 
+      year: 2021
       overview:
         Earned UX Design Certificate by completing 152 hours of courses and three case studies. Studied UX research, UI design, and foundational UX concepts. Conducted user research and user testing interviews.
+    - title: Architecture Engineering (MEng)
+      institution: National Technical University of Athens, Athens, Greece
+      year: 2020
+      description:
+        - 'GRADE: 8.05/10'
+    - title:  Student Exchange Program - Erasmus
+      institution: Universitat Politècnica de Catalunya , Barcelona, Spain
+      year: 2017
 
 # - title: Open Source Projects
 #   type: time_table
