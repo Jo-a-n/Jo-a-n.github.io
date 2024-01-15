@@ -2,6 +2,7 @@
 layout: page
 title: Hackathon - ThessDW 2023
 description: Infrastructure App for citizens of Thessaloniki
+year: 2023
 img: /assets/img/cover-eco-thes.jpg
 importance: 2
 category: [case studies]

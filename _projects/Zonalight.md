@@ -6,7 +6,7 @@ description: E-Commerce Website
 year: 2021
 img: /assets/img/cover-zonalight.jpg
 importance: 7
-category: [business & ecommerce]
+# category: [business & ecommerce]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

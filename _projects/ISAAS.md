@@ -6,7 +6,7 @@ description: UI/UX Design
 year: TBA
 img: /assets/img/cover-isaas.jpg
 importance: 9
-category: [apps & platforms]
+# category: [apps & platforms]
 ---
 
 <div class="px-3 pt-3 pb-1 mb-3 rounded" style="background-color: rgba(43, 86, 127, .05);">

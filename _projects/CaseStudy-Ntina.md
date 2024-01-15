@@ -2,6 +2,7 @@
 layout: page
 title: KN - Case Study
 description: Mobile-ordering Chatbot App
+year: 2021
 img: /assets/img/cover-ntina.jpg
 importance: 1
 category: [case studies]

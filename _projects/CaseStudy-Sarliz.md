@@ -2,6 +2,7 @@
 layout: page
 title: ΣΑΡΛΙΖ - Case Study
 description: Cinema Responsive Website
+year: 2021
 img: /assets/img/cover-sarliz.jpg
 importance: 1
 category: [case studies]
